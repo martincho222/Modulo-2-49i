@@ -34,3 +34,22 @@ Entre las características más importantes de JavaScript se incluyen:
 * Tiene una gran cantidad de bibliotecas y frameworks que facilitan la creación de aplicaciones web interactivas y dinámicas.
 * Permite la manipulación de HTML y CSS, lo que permite cambiar la apariencia de una página web en tiempo real.
 * Es un lenguaje multiplataforma, lo que significa que se puede ejecutar en diferentes sistemas operativos y dispositivos.
+
+## Caracteristicas principales de Javascript
+
+JavaScript, comúnmente abreviado como "JS", es un lenguaje de programación interpretado que se ejecuta en el navegador web. Es un dialecto del estándar ECMAScript, el cual establece la especificación del lenguaje.
+Una de las características más importantes de JavaScript es que se define como orientado a objetos, lo que significa que se basa en la creación de objetos y la manipulación de sus propiedades y métodos. Esto lo convierte en un lenguaje muy útil para la creación de aplicaciones web interactivas y dinámicas.
+Otra característica importante de JavaScript es que está basado en prototipos. Esto significa que no se utilizan clases para definir objetos, sino que se crean objetos a partir de otros objetos ya existentes, a través de una técnica llamada herencia de prototipos.
+JavaScript es también un lenguaje imperativo, lo que significa que se enfoca en las instrucciones a seguir para llevar a cabo una tarea. Además, es débilmente tipado, lo que significa que no es necesario declarar el tipo de dato de una variable antes de usarla. Finalmente, JavaScript es dinámico, lo que significa que se pueden agregar y eliminar propiedades de un objeto en tiempo de ejecución.
+
+# ¿Que es el ECMASCRIPT?
+
+ECMAScript (también conocido como ES) es una especificación de lenguaje de programación estándar que define el conjunto de características y comportamientos que deben ser implementados por los motores de JavaScript. Especifica cómo deben funcionar los elementos fundamentales del lenguaje, como la sintaxis, tipos de datos, estructuras de control, funciones, objetos y más.
+ECMAScript es el estándar subyacente que define la sintaxis y las características del lenguaje JavaScript. Los navegadores web, los motores de JavaScript y otros entornos de ejecución implementan ECMAScript para proporcionar soporte a JavaScript.
+A lo largo de los años, diferentes versiones de ECMAScript se han lanzado, cada una con nuevas características y mejoras. Las versiones más conocidas son:
+
+* ECMAScript 5 (ES5): lanzado en 2009 y ampliamente compatible en los navegadores modernos.
+* ECMAScript 6 (ES6) o ECMAScript 2015 (ES2015): lanzado en 2015 e introdujo muchas características nuevas como let/const, arrow functions, classes, modules, etc.
+* ECMAScript 2016 (ES2016) y posteriores: se han lanzado nuevas versiones de ECMAScript cada año a partir de 2016, introduciendo gradualmente nuevas características y mejoras.
+
+La adopción de las características de ECMAScript en los navegadores y entornos de ejecución puede variar, por lo que es importante verificar la compatibilidad de las características específicas con los navegadores y entornos en los que se planea utilizar el código JavaScript.
