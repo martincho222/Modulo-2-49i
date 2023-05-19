@@ -19,6 +19,51 @@ Por otro lado, un programa es un conjunto de instrucciones escritas en un lengua
 En otras palabras, un algoritmo es la idea o el plan para resolver un problema, mientras que un programa es la implementación concreta de ese plan en un lenguaje de programación para que una computadora pueda ejecutarlo.
 Los algoritmos y programas son esenciales en la programación ya que permiten resolver problemas de manera eficiente y automatizada. Los programadores utilizan algoritmos para diseñar soluciones a problemas y luego los implementan en programas para que puedan ser ejecutados por las computadoras.
 
+## ejemplos de Algoritmos
+### Algoritmo para encontrar el máximo de dos números:
+```
+Inicio
+    Leer num1
+    Leer num2
+    Si num1 > num2 Entonces
+        Mostrar num1 es el máximo
+    Sino
+        Mostrar num2 es el máximo
+    Fin Si
+Fin
+```
+
+### Algoritmo para calcular el factorial de un número:
+```
+Inicio
+    Leer n
+    Inicializar factorial como 1
+    Para i desde 1 hasta n hacer
+        Multiplicar factorial por i y almacenar el resultado en factorial
+    Fin Para
+    Mostrar El factorial de n es factorial
+Fin
+```
+
+### Algoritmo para buscar un elemento en una lista:
+```
+Inicio
+    Leer lista
+    Leer elemento
+    Inicializar encontrado como falso
+    Para cada elemento en lista hacer
+        Si elemento es igual a elemento_actual Entonces
+            Mostrar El elemento se encuentra en la lista
+            Asignar verdadero a encontrado
+            Romper el bucle
+        Fin Si
+    Fin Para
+    Si encontrado es falso Entonces
+        Mostrar El elemento no se encuentra en la lista
+    Fin Si
+Fin
+```
+
 
 # ¿Qué es Javascript?
 
