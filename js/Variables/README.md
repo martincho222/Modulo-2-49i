@@ -54,3 +54,63 @@ En JavaScript, existen tres palabras clave para declarar variables: `var`, `let`
    ```
 
 En general, se recomienda utilizar `let` para la mayoría de las variables en JavaScript, ya que proporciona un alcance a nivel de bloque y evita algunos problemas asociados con `var`. Se debe utilizar `const` cuando se desea declarar una variable cuyo valor no cambiará a lo largo del programa. `var` todavía se utiliza en ciertos casos específicos o en código más antiguo, pero se recomienda evitar su uso en nuevos proyectos.
+
+## Ejemplos de las diferencias entre var, let y const
+
+Aquí tienes algunos ejemplos que ilustran las diferencias entre `var`, `let` y `const`:
+
+1. Ejemplo con `var`:
+```javascript
+function ejemploVar() {
+  var x = 5;
+  
+  if (true) {
+    var x = 10; // La variable "x" es redeclarada dentro del bloque, afectando su valor fuera del bloque también
+    console.log(x); // Imprime 10
+  }
+  
+  console.log(x); // Imprime 10 debido al alcance a nivel de función
+}
+
+ejemploVar();
+```
+
+2. Ejemplo con `let`:
+```javascript
+function ejemploLet() {
+  let x = 5;
+  
+  if (true) {
+    let x = 10; // La variable "x" se declara dentro del bloque, no afectando su valor fuera del bloque
+    console.log(x); // Imprime 10
+  }
+  
+  console.log(x); // Imprime 5 debido al alcance a nivel de bloque
+}
+
+ejemploLet();
+```
+
+3. Ejemplo con `const`:
+```javascript
+function ejemploConst() {
+  const PI = 3.1416;
+  
+  console.log(PI); // Imprime 3.1416
+  
+  // PI = 3.14; // Esto dará un error, no se puede reasignar un valor a una variable constante
+  
+  const persona = {
+    nombre: "Juan",
+    edad: 30
+  };
+  
+  persona.edad = 31; // Las propiedades de un objeto constante pueden ser modificadas
+  
+  console.log(persona); // Imprime { nombre: "Juan", edad: 31 }
+}
+
+ejemploConst();
+```
+
+Estos ejemplos muestran cómo `var` tiene un alcance a nivel de función, mientras que `let` y `const` tienen un alcance a nivel de bloque. Además, `const` se utiliza para declarar variables constantes cuyos valores no pueden ser reasignados, aunque las propiedades de los objetos o elementos de los arreglos pueden ser modificados.
