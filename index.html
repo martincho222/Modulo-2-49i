@@ -8,22 +8,47 @@
     <title>Fundamentos</title>
 </head>
 <body>
-    <!-- el problema elegir zapatos -->
-    <!-- 
-        1 - INICIO = IR AL LOCAL DONDE VENDEN ZAPATOS
-        2 - ENTRAR AL LOCAL Y VER ZAPATOS
-        3- AGARROMOS UNOS ZAPATOS - DATO
-        4- SON FORMALES? - PROCESO
-        A: SI (IR AL PASO 5) B: NO (VOLVER AL PASO 3)
-        5- SON DE MI TALLA? -PROCESO
-        A: SI (IR AL PASO 6) B: NO (VOLVER AL PASO 3)
-        6- LOS PUEDO PAGAR? - PROCESO
-        A: SI (IR AL PASO 7) B:NO (VOLVER programAL PASO 3)
-        7 - COMPRAR EL ZAPATO ELEGIDO - RESULTADO
-        8 FIN
+    <!-- Problemas para la compra de mercaderia en un comercio mayorista -->
 
-        ECMASCRIPT O ES
-     -->
+    <!-- 1 - INICIO = El proveedor entra al local mayorista
+    2 - el proveedor ofrece sus productos y precios a la encargada de compra
+    3 - La encargada de compra analiza precio, calidad del producto y comparativas con otros precios en el mercado - DATO
+    4 - El producto es de buen precio y calidad en comparacion a otros precios en el mercado? - Proceso
+    A: Si (Ir al paso 5)  B: No (Volver al Paso 2)
+    5- La encarga de compra analiza el stock y fecha de vencimiento del producto existente antes de realizar una operacion.
+    6- El producto se encuentra con stock bajo? -proceso
+    7- A:Si (Ir al paso 8) B: No(Se solicitaria una nueva visita del vendedor)
+    8- Se procederia a una compra cautelosa en concepto de prueba por su rotacion
+    9- Una vez recepcionada la mercaderia, se haria un seguimiento riguroso para la futura compra del producto en caso de una buena rotacion - Resultado
+    10- Fin -->
+
+
+    <!-- Problemas para control de recepción de mercaderia -->
+
+    <!-- 1- INICIO= El encargado de deposioto recibe una factura/remito con la mercadieria solicitada.
+    2- El encargado de deposito informa a la encargada de compra sobre la mercaderia solicitada para su rechazo o acpetacion.
+    3- El en cargado de compra hace una comparacion de la factura/remito con la nota de pedido realizada desde el sector de compras - Dato
+    4- La factura/remito coincide con la nota de pedido? - Proceso
+    A: Si (Ir al paso 5) No (ir al paso 2 "Si la factura/remito no coinside con la nota de pedido y es informado al sector de compra, y este la rechaza por cuestiones de que no hubo ninguna modificacion en la mercaderia solicitada en el transcurso del pedido se hace una devolucion de la misma.")
+    5- Se realiza la recepción de la mercaderia solicitada
+    6- El encargado de la recepción de productos verifica estado y fecha de venciminto del producto - Dato
+    7- El producto esta dentro de los plazos de vencimiento para su venta en tiempo y forma de su rotacion? - Proceso
+    8- A: Si (ir al paso 9) B: No (Ir al paso 2)
+    9- Recepcionar la misma y conformar la documentacion correspondiente - Resultado
+    10- FIN -->
+
+
+    <!-- Problemas para exhibición y venta del producto -->
+
+    <!-- 1- INICIO= El encargado de recepción comunica al encargado de salon la existencia de nuevo producto para su desarrollo y venta.
+    2- El encargado de salon procede a informar a gerencia sobre el estado y situacion en el salon del producto. - Dato
+    3- El encargado de salon procede a la ubicacion del producto frente a su competencia.
+    4- Se procede luego a la observacion en la rotacion para determinar alguna falencia en su venta
+    5- el producto tiene rotacion segun las expectativas?- Proceso
+    A: Si (Ir al paso 6) B: No (Ir al paso 2)
+    6- Se comunica a la encargada de compra todas las posibles ventajas del producto para una nueva operacion.- Resultado
+    7-fin --> 
+
      <script src="./js/app.js"></script>
 </body>
 </html>
