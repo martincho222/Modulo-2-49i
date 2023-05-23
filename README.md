@@ -1,4 +1,4 @@
-# Fundamentos de Programacion
+# Fundamentos de Programación
 
 Los fundamentos de programación son los conceptos y principios básicos que se deben conocer y entender para poder crear programas de computadora. Algunos de estos conceptos son:
 
