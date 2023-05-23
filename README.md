@@ -1,4 +1,4 @@
-# Fundamentos de Programacion
+# Fundamentos de Programación
 
 Los fundamentos de programación son los conceptos y principios básicos que se deben conocer y entender para poder crear programas de computadora. Algunos de estos conceptos son:
 
@@ -45,7 +45,7 @@ Las características principales de un algoritmo son:
 * Modularidad: Un algoritmo debe ser modular para facilitar la comprensión y el mantenimiento del código. Se debe dividir en bloques o módulos que puedan ser probados y depurados individualmente.
 * Abstracción: Un algoritmo debe utilizar la abstracción para simplificar un problema complejo y dividirlo en piezas más manejables y fáciles de entender.
 
-## ejemplos de Algoritmos
+## Ejemplos de Algoritmos
 ### Algoritmo para encontrar el máximo de dos números:
 ```
 Inicio
