@@ -124,3 +124,5 @@ A lo largo de los años, diferentes versiones de ECMAScript se han lanzado, cada
 * ECMAScript 2016 (ES2016) y posteriores: se han lanzado nuevas versiones de ECMAScript cada año a partir de 2016, introduciendo gradualmente nuevas características y mejoras.
 
 La adopción de las características de ECMAScript en los navegadores y entornos de ejecución puede variar, por lo que es importante verificar la compatibilidad de las características específicas con los navegadores y entornos en los que se planea utilizar el código JavaScript.
+
+prueba cambios
