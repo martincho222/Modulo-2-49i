@@ -6,3 +6,4 @@ let edad = prompt("Ingresa tu edad (solo numero)");
 let actividadFav = prompt("Ingresa tu actividad favorita🎭🎸💻");
 let deporteFav = prompt("Ingresa tu deporte favorito🏈🏐🏀");
 console.log("HOLA! Me llamo " + nombre + ". " + "Tengo " + edad + " años de edad. " + actividadFav + " es la actividad que me representa" + " y mi deporte favorito es " + deporteFav + ".");
+alert("HOLA! Me llamo " + nombre + ". " + "Tengo " + edad + " años de edad. " + actividadFav + " es la actividad que me representa" + " y mi deporte favorito es " + deporteFav + ".");
