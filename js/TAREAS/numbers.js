@@ -133,5 +133,4 @@ Generar un número aleatorio entre dos valores ingresados por el usuario y mostr
 const numero1 = parseFloat(prompt("Ingrese el primer valor:"));
 const numero2 = parseFloat(prompt("Ingrese el segundo valor:"));
 
-console.log("El valor aleatorio generado es ", Math.floor(Math.random()*(Math.max(numero1,numero2)-Math.min(numero1,numero2))+1));
-*/
+console.log("El valor aleatorio generado es ", Math.floor(Math.random()*(Math.max(numero1,numero2)-Math.min(numero1,numero2)+1)+Math.min(numero1,numero2)));*/
