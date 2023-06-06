@@ -41,18 +41,19 @@ if (numero > cadena.length){
 
 /* Tarea String 6:
 Solicitar al usuario que ingrese una cadena y mostrar en consola la cantidad de vocales que contiene.*/
-/*
+
 let cadena = prompt ("Ingrese una cadena de texto:");
 let contadorVocales=0;
+const vocales="aáeéiíoóuú"
 cadena = cadena.toLowerCase();
-for (let i=0; i < cadena.length; i++){
-    if (cadena.charAt(i)=='a' || cadena.charAt(i)=='e' || cadena.charAt(i)=='i' || cadena.charAt(i)=='o' || cadena.charAt(i)=='u' ){
+for (let letra of cadena){
+    if (vocales.includes(letra) ){
         ++contadorVocales;
     }
 }
 
 console.log('La cadena posee ', contadorVocales, ' vocales'); 
-*/
+
 
 /* Tarea String 7:
 Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola la cantidad de veces que la palabra aparece en la cadena.*/
