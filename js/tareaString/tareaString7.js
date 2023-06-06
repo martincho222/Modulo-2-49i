@@ -6,6 +6,7 @@ Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola 
 let cadena = prompt("Ingresa una cadena de texto");
 let palabra = prompt("Ingresa una palabra");
 let separados = cadena.split(palabra);
-alert(separados)
+alert(separados);
+console.log(separados);
 
 /*TODAVIA NO LO TERMINÉ*/

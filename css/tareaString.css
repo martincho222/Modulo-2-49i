@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #27374D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonTarea {
+    color: #27374D;
+    width: 150%;
+    height: 10vh;
+    margin: 5px;
+    background-color: #f7df1e;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.botonActivo {
+    animation: parpadeo 0.7s ease-in-out infinite;
+}
+
+@keyframes parpadeo {
+    0% {
+        border: 3px solid transparent;
+    }
+    50% {
+        border: 3px solid rgba(255, 255, 255, 0.811);
+    }
+    100% {
+        border: 3px solid transparent;
+    }
+}
+
+.botonTarea:hover {
+    transform: scale(1.05);
+}
