@@ -50,10 +50,11 @@
 // Tarea String 7:
 // Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola la cantidad de veces que la palabra aparece en la cadena.
 
-// let cadena = prompt("Ingrese una cadena de texto");
-// let palabra = prompt("Ingrese una palabra");
-// let encontrada = cadena.search(palabra);
 
-// console.log(encontrada);
+// let cadena = prompt("Ingresa una cadena de texto").toLowerCase();
+// let palabra = prompt("Ingresa una palabra a buscar").toLowerCase();
+// let array = cadena.split(' ');
 
-// PD: De está ultima tengo mis dudas de si estara bien.
+// let contador = array.filter((p) => p === palabra);
+
+// console.log(`Su palabra aparece ${contador} veces.`);
