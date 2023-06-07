@@ -4,7 +4,7 @@ Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola 
 /*TODAVIA NO LO TERMINÉ*/
 
 let cadena = prompt("Ingresa una cadena de texto");
-let palabra = prompt("Ingresa una palabra");
+let palabra = prompt("Ingresa una palabra, yo voy a indicarte cuantas veces aparece en la cadena de texto");
 let separados = cadena.split(palabra);
 alert(separados);
 console.log(separados);
