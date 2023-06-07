@@ -1,4 +1,5 @@
 # Estructuras de Control
+
 Las estructuras de control en JavaScript son herramientas que te permiten controlar el flujo de ejecución de un programa. Son como indicaciones que le das al código para que haga diferentes acciones dependiendo de ciertas condiciones. Son útiles cuando quieres que tu programa tome decisiones o repita tareas automáticamente.
 
 Imagina que estás siguiendo una receta de cocina. Las estructuras de control serían como las instrucciones que te dicen qué hacer en diferentes situaciones. Por ejemplo, si la receta te dice "si la sartén está caliente, añade los ingredientes", estás usando una estructura de control condicional para tomar una decisión basada en si la sartén está caliente o no.
@@ -11,23 +12,25 @@ Las estructuras de control más comunes en JavaScript son:
 
 En resumen, estas estructuras de control te permiten escribir programas más poderosos y flexibles, ya que puedes tomar decisiones y repetir tareas automáticamente.
 
-
-
 ## 1 - Estructuras condicionales
 
-	Permiten ejecutar un bloque de código si se cumple una condición. Las estructuras condicionales más comunes en JavaScript son, if, else, else if.
+Permiten ejecutar un bloque de código si se cumple una condición. Las estructuras condicionales más comunes en JavaScript son, if, else, else if.
 
 ejemplos:
-- `if`: 
-Se utiliza para ejecutar un bloque de código si una condición es verdadera.
+
+- `if`:
+  Se utiliza para ejecutar un bloque de código si una condición es verdadera.
+
 ```javascript
 let edad = 18;
 if (edad >= 18) {
   console.log("Eres mayor de edad");
 }
+```
 
-- `else`: 
-Se utiliza para ejecutar un bloque de código si la condición de un `if` no es verdadera.
+- `else`:
+  Se utiliza para ejecutar un bloque de código si la condición de un `if` no es verdadera.
+
 ```javascript
 let edad = 15;
 if (edad >= 18) {
@@ -38,7 +41,8 @@ if (edad >= 18) {
 ```
 
 - `else if`:
-Se utiliza para evaluar múltiples condiciones.
+  Se utiliza para evaluar múltiples condiciones.
+
 ```javascript
 let nota = 80;
 if (nota >= 90) {
@@ -54,7 +58,7 @@ if (nota >= 90) {
 
 ## 2 - Estructuras condicionales múltiples
 
-	Pueden utilizar la estructura de control condicional `switch` para evaluar múltiples casos y ejecutar diferentes bloques de código dependiendo del valor de una expresión. La sintaxis básica de `switch` es la siguiente:
+    Pueden utilizar la estructura de control condicional `switch` para evaluar múltiples casos y ejecutar diferentes bloques de código dependiendo del valor de una expresión. La sintaxis básica de `switch` es la siguiente:
 
 ```javascript
 switch (expresión) {
@@ -69,9 +73,10 @@ switch (expresión) {
     break;
   // más casos...
   default:
-    // código a ejecutar si la expresión no coincide con ninguno de los valores anteriores
+  // código a ejecutar si la expresión no coincide con ninguno de los valores anteriores
 }
 ```
+
 que significa el ejemplo anterior:
 
 1. La expresión dentro del `switch` se evalúa y luego se compara con los valores de cada caso.
@@ -103,10 +108,9 @@ En este caso, si `opcion` tiene el valor `2`, se imprimirá "Opción 2 seleccion
 
 El `break` después de cada bloque de código es para evitar que se ejecuten los casos siguientes accidentalmente. También puedes omitir el `default` si no necesitas un caso por defecto.
 
-
 ## 3 - Bucles
 
-	Existen diferentes tipos de bucles que permiten ejecutar un bloque de código repetidamente. Estos bucles son estructuras de control fundamentales en programación y les permiten automatizar tareas repetitivas. Los bucles más comunes son:
+    Existen diferentes tipos de bucles que permiten ejecutar un bloque de código repetidamente. Estos bucles son estructuras de control fundamentales en programación y les permiten automatizar tareas repetitivas. Los bucles más comunes son:
 
 1. Bucle while: El bucle `while` ejecuta un bloque de código siempre que una condición especificada sea verdadera. La sintaxis básica es la siguiente:
 
@@ -177,4 +181,3 @@ for (var i = 0; i < 5; i++) {
 ```
 
 Este bucle `for` imprimirá los valores del contador del 0 al 4 en la consola. La variable `i` se incrementa en cada iteración.
-
