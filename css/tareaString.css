@@ -36,6 +36,19 @@ body {
     transition: transform 0.2s ease;
 }
 
+.botonAlt {
+    color: #27374D;
+    width: 100%;
+    height: 5vh;
+    margin: 5px;
+    background-color: #f08400;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
 .botonActivo {
     animation: parpadeo 0.7s ease-in-out infinite;
 }
@@ -53,5 +66,9 @@ body {
 }
 
 .botonTarea:hover {
+    transform: scale(1.05);
+}
+
+.botonAlt:hover {
     transform: scale(1.05);
 }
