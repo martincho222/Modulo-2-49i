@@ -23,7 +23,7 @@
 // 13- Ejercicio bucles: Imprimir una serie numérica especial: 1, -2, 3, -4, 5, -6, 7, -8, 9, -10, ...
 // 14- Ejercicio bucles: Calcular la suma de los dígitos pares de un número entero positivo.
 
-// ------
+// / ------RESUELTOS------
 
 // 1- Ejercicio bucles: Imprimir los números del 1 al 10.
 
