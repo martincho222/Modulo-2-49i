@@ -42,31 +42,33 @@ if (numero > cadena.length){
 /* Tarea String 6:
 Solicitar al usuario que ingrese una cadena y mostrar en consola la cantidad de vocales que contiene.*/
 
-let cadena = prompt ("Ingrese una cadena de texto:");
-let contadorVocales=0;
-const vocales="aáeéiíoóuú"
-cadena = cadena.toLowerCase();
-for (let letra of cadena){
-    if (vocales.includes(letra) ){
-        ++contadorVocales;
-    }
-}
+// let cadena = prompt ("Ingrese una cadena de texto:");
+// let contadorVocales=0;
+// const vocales="aáeéiíoóuú"
+// cadena = cadena.toLowerCase();
+// for (let letra of cadena){
+//     if (vocales.includes(letra) ){
+//         ++contadorVocales;
+//     }
+// }
 
-console.log('La cadena posee ', contadorVocales, ' vocales'); 
+// console.log('La cadena posee ', contadorVocales, ' vocales'); 
 
 
 /* Tarea String 7:
 Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola la cantidad de veces que la palabra aparece en la cadena.*/
 /*
 const cadena = prompt ("Ingrese una cadena de texto:");
-const cadenaBuscar= prompt("Ingrese una palabra:");
+const cadenaBuscar= prompt("Ingrese una palabra:"); hola
 
-let arregloCadena = cadena.split(" ");
-let contadorPalabra = 0;
+let arregloCadena = cadena.split(" ");  hola mundo como va
+[hola, mundo, como, va]
+
+let contadorPalabra = 0;1
 
 for (let i=0; i < arregloCadena.length; i++){
     if (arregloCadena[i]===cadenaBuscar){
-        ++contadorPalabra;
+        contadorPalabra++;
     }
 }
 
@@ -78,4 +80,5 @@ else
     console.log("La palabra se encuentra ",contadorPalabra, " veces dentro de la cadena");
 }
 */
+
 
