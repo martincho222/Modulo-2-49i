@@ -43,12 +43,41 @@
 // //  Tarea String 6:
 // // Solicitar al usuario que ingrese una cadena y mostrar en consola la cantidad de vocales que contiene.
 
+// let cadenaingresada = prompt("ingrese una cadena de texto y le dieremos cuantas vocale tiene");
+
+// let contador = 0;
+
+// let cadenaAclonar = cadenaingresada.toLowerCase();
+
+// for (i=0;i<cadenaAclonar.length;i++){
+//     if(cadenaAclonar[i]=="a" || cadenaAclonar[i]=="e" || cadenaAclonar[i]=="i" || cadenaAclonar[i]=="o" || cadenaAclonar[i]=="u"){
+//         contador += 1
+//     }
+
+// }
+
+// console.log(`el string ingresado tiene ${contador} vocales`);
 
 
 // //  Tarea String 7:
 // // Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola la cantidad de veces que la palabra aparece en la cadena.
 
+// var cadena = prompt("Ingresa una cadena:");
+// var palabra = prompt("Ingresa una palabra:");
+// cadena = cadena.toLowerCase();
+// palabra = palabra.toLowerCase();
+// var contador = 0;
 
+
+// var posicion = cadena.indexOf(palabra);
+
+// while (posicion !== -1) {
+//   contador++;
+//   posicion = cadena.indexOf(palabra, posicion + 1);
+// }
+
+
+// console.log(`la palabra ${palabra} aparece ${contador} veces en el string "${cadena}"`);
 
 // //  Tarea Number 1:
 // // Usando métodos matemáticos, ingresar 3 números:
