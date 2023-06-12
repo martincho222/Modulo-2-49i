@@ -7,7 +7,7 @@
 
 // Nivel de dificultad: Moderado
 // 4- Ejercicio if-else: Calcular el mayor de tres números.LISTO
-// 5- Ejercicio if-else: Determinar si un año es bisiesto.
+// 5- Ejercicio if-else: Determinar si un año es bisiesto. LISTO
 
 // Nivel de dificultad: Difícil
 // 6- Ejercicio if-else: Ordenar tres números de forma ascendente. LISTO
@@ -67,6 +67,19 @@
 // } else {
 //     alert(`alguno de los numeros se repite o es inválido`)
 // }
+
+// 5- Ejercicio if-else: Determinar si un año es bisiesto.
+
+// let anio = parseFloat(prompt(`Escriba el año a consultar si es bisiesto`));
+
+// if (anio % 400 === 0) {
+//     alert(`El año ${anio} es bisiesto`);
+// } else if (anio % 400 !== 0) {
+//     alert(`El año ${anio} no es bisiesto`);
+// } else {
+//     alert(`ingresó un dato invalido`);
+// }
+
 
 // Nivel de dificultad: Difícil
 // 6- Ejercicio if-else: Ordenar tres números de forma ascendente.
