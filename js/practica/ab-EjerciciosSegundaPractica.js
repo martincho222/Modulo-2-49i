@@ -1,151 +1,151 @@
 // Tarea:
 
-//  If-else:
+// //  If-else:
 
-//  Nivel de dificultad: Fácil
-// 1- Ejercicio if-else: Determinar si un número es positivo, negativo o cero.
+// //  Nivel de dificultad: Fácil
+// // 1- Ejercicio if-else: Determinar si un número es positivo, negativo o cero.
 
-let num = 2;
+// let num = 2;
 
-if(num===0){
-    console.log(`el numero ${num} es igual a 0`)
-}else if (num>0){
-    console.log(`el numero ${num} es positivo`)
-}else {
-    console.log(`el numero ${num} es negativo`)
-}
+// if(num===0){
+//     console.log(`el numero ${num} es igual a 0`)
+// }else if (num>0){
+//     console.log(`el numero ${num} es positivo`)
+// }else {
+//     console.log(`el numero ${num} es negativo`)
+// }
 
-// 2- Ejercicio if-else: Determinar si un número es par o impar.
+// // 2- Ejercicio if-else: Determinar si un número es par o impar.
 
-let numParImpar = 2;
+// let numParImpar = 2;
 
-if(numParImpar%2===0){
-    console.log(`el numero ${numParImpar} es par`)
-}else {
-    console.log(`el numero ${numParImpar} es impar`)
-}
+// if(numParImpar%2===0){
+//     console.log(`el numero ${numParImpar} es par`)
+// }else {
+//     console.log(`el numero ${numParImpar} es impar`)
+// }
 
-// 3- Ejercicio if-else: Verificar si un número es divisible por 3.
+// // 3- Ejercicio if-else: Verificar si un número es divisible por 3.
 
-let numDiv3 = 6;
+// let numDiv3 = 6;
 
-if(numDiv3%3===0){
-    console.log(`el numero ${numDiv3} es divisible en 3`)
-}else {
-    console.log(`el numero ${numDiv3} no es divisible en 3`)
-}
+// if(numDiv3%3===0){
+//     console.log(`el numero ${numDiv3} es divisible en 3`)
+// }else {
+//     console.log(`el numero ${numDiv3} no es divisible en 3`)
+// }
 
-//  Nivel de dificultad: Moderado
-// 4- Ejercicio if-else: Calcular el mayor de tres números.
+// //  Nivel de dificultad: Moderado
+// // 4- Ejercicio if-else: Calcular el mayor de tres números.
 
-let num1=0;
-let num2=0;
-let num3=10;
+// let num1=0;
+// let num2=0;
+// let num3=10;
 
-if(num1==num2 && num2==num3){
+// if(num1==num2 && num2==num3){
 
-    console.log(`son todos iguales`)
+//     console.log(`son todos iguales`)
 
-}else if(num1>num2){
+// }else if(num1>num2){
 
-    if(num1>num3){
+//     if(num1>num3){
 
-        console.log(`el mayor es el numero ${num1} `)
+//         console.log(`el mayor es el numero ${num1} `)
 
-    }else{
+//     }else{
 
-        console.log(`el mayor es el numero ${num3} `)
+//         console.log(`el mayor es el numero ${num3} `)
 
-    }
+//     }
     
-}else if(num2>num3){
+// }else if(num2>num3){
    
-    console.log(`el mayor es el numero ${num2} `)
+//     console.log(`el mayor es el numero ${num2} `)
     
-}else{
+// }else{
 
-    console.log(`el mayor es el numero ${num3} `)
+//     console.log(`el mayor es el numero ${num3} `)
 
-}
+// }
 
 
-// 5- Ejercicio if-else: Determinar si un año es bisiesto.
+// // 5- Ejercicio if-else: Determinar si un año es bisiesto.
 
  
-let anioBisiesto = 2020;
+// let anioBisiesto = 2020;
 
-if(anioBisiesto%4===0){
-    console.log(`el año ${anioBisiesto} es bisiesto`)
-}else {
-    console.log(`el año ${anioBisiesto} no es bisiesto`)
-}
+// if(anioBisiesto%4===0){
+//     console.log(`el año ${anioBisiesto} es bisiesto`)
+// }else {
+//     console.log(`el año ${anioBisiesto} no es bisiesto`)
+// }
 
-//  Nivel de dificultad: Difícil
-// 6- Ejercicio if-else: Ordenar tres números de forma ascendente.
+// //  Nivel de dificultad: Difícil
+// // 6- Ejercicio if-else: Ordenar tres números de forma ascendente.
 
-let numOrdenado1=1;
-let numOrdenado2=5;
-let numOrdenado3=8;
+// let numOrdenado1=1;
+// let numOrdenado2=5;
+// let numOrdenado3=8;
 
-if(numOrdenado1<numOrdenado2 && numOrdenado1<numOrdenado3){
-    if (numOrdenado2<numOrdenado3){
-        console.log(`${numOrdenado1} ${numOrdenado2} ${num3} `)
-    }else{
-        console.log(`${numOrdenado1} ${num3} ${numOrdenado2} `)
-    }
-}else if(numOrdenado2<numOrdenado1 && numOrdenado2<numOrdenado3){
-    if (numOrdenado1<numOrdenado3){
-        console.log(`${numOrdenado2} ${numOrdenado1} ${numOrdenado3} `)
-    }else{
-        console.log(`${numOrdenado2} ${numOrdenado3} ${numOrdenado1} `)
-    }
-}else if(numOrdenado3<numOrdenado1 && numOrdenado3<numOrdenado2){
-    if (numOrdenado1<numOrdenado2){
-        console.log(`${numOrdenado3} ${numOrdenado1} ${numOrdenado2} `)
-    }else{
-        console.log(`${numOrdenado3} ${numOrdenado2} ${numOrdenado1} `)
-    }
-}
-// 7- Ejercicio if-else: Calcular el descuento aplicable a una compra según el monto.
+// if(numOrdenado1<numOrdenado2 && numOrdenado1<numOrdenado3){
+//     if (numOrdenado2<numOrdenado3){
+//         console.log(`${numOrdenado1} ${numOrdenado2} ${num3} `)
+//     }else{
+//         console.log(`${numOrdenado1} ${num3} ${numOrdenado2} `)
+//     }
+// }else if(numOrdenado2<numOrdenado1 && numOrdenado2<numOrdenado3){
+//     if (numOrdenado1<numOrdenado3){
+//         console.log(`${numOrdenado2} ${numOrdenado1} ${numOrdenado3} `)
+//     }else{
+//         console.log(`${numOrdenado2} ${numOrdenado3} ${numOrdenado1} `)
+//     }
+// }else if(numOrdenado3<numOrdenado1 && numOrdenado3<numOrdenado2){
+//     if (numOrdenado1<numOrdenado2){
+//         console.log(`${numOrdenado3} ${numOrdenado1} ${numOrdenado2} `)
+//     }else{
+//         console.log(`${numOrdenado3} ${numOrdenado2} ${numOrdenado1} `)
+//     }
+// }
+// // 7- Ejercicio if-else: Calcular el descuento aplicable a una compra según el monto.
 
-let importe = 1250;
-let totalApagar
-let descuento=0;
+// let importe = 1250;
+// let totalApagar
+// let descuento=0;
 
-if(importe<0){
-    totalApagar="valor nulo"
-}else if(importe<500){
-    totalApagar=importe
-}else if (importe<1000){
-    totalApagar=importe*0.95;
-    descuento=5;
-}else if (importe<1500){
-    totalApagar=importe*0.90;
-    descuento=10;
-}else if(importe>=1500){
-    totalApagar=importe*0.85;
-    descuento=15;
-}
+// if(importe<0){
+//     totalApagar="valor nulo"
+// }else if(importe<500){
+//     totalApagar=importe
+// }else if (importe<1000){
+//     totalApagar=importe*0.95;
+//     descuento=5;
+// }else if (importe<1500){
+//     totalApagar=importe*0.90;
+//     descuento=10;
+// }else if(importe>=1500){
+//     totalApagar=importe*0.85;
+//     descuento=15;
+// }
 
-if(descuento==0){
-    console.log(`usted tiene para pagar ${totalApagar}$ sin descuento`)
-}else{
-    console.log(`usted tiene para pagar ${totalApagar}$ con descuento del ${descuento}% (monoto original ${importe})$`)
-}
+// if(descuento==0){
+//     console.log(`usted tiene para pagar ${totalApagar}$ sin descuento`)
+// }else{
+//     console.log(`usted tiene para pagar ${totalApagar}$ con descuento del ${descuento}% (monoto original ${importe})$`)
+// }
 
-// 8- Ejercicio if-else: Determinar el tipo de triángulo según sus lados.
+// // 8- Ejercicio if-else: Determinar el tipo de triángulo según sus lados.
 
-let ladoTrianguloUno =1;
-let ladoTrianguloDos =2;
-let ladoTrianguloTres =3;
+// let ladoTrianguloUno =1;
+// let ladoTrianguloDos =2;
+// let ladoTrianguloTres =3;
 
-if(ladoTrianguloUno===ladoTrianguloDos && ladoTrianguloDos==ladoTrianguloTres){
-    console.log(`Triángulo equilátero`)
-}else if(ladoTrianguloUno===ladoTrianguloDos || ladoTrianguloDos===ladoTrianguloTres || ladoTrianguloUno===ladoTrianguloTres){
-    console.log(`Triángulo isósceles`)
-}else {
-    console.log(`Triángulo escaleno`)
-}
+// if(ladoTrianguloUno===ladoTrianguloDos && ladoTrianguloDos==ladoTrianguloTres){
+//     console.log(`Triángulo equilátero`)
+// }else if(ladoTrianguloUno===ladoTrianguloDos || ladoTrianguloDos===ladoTrianguloTres || ladoTrianguloUno===ladoTrianguloTres){
+//     console.log(`Triángulo isósceles`)
+// }else {
+//     console.log(`Triángulo escaleno`)
+// }
 
 //  Switch:
 
@@ -291,30 +291,30 @@ if(ladoTrianguloUno===ladoTrianguloDos && ladoTrianguloDos==ladoTrianguloTres){
 //         break;
 // }
 
-// 6- Ejercicio switch: Verificar el rango de edad de una persona según su edad.
+// // 6- Ejercicio switch: Verificar el rango de edad de una persona según su edad.
 
-var edad = 18;
+// var edad = 18;
 
-switch (true) {
-    case (edad>0 && edad <4):
-        console.log("Eres un bebé");
-        break;
-    case (edad>=4 && edad <11):
-        console.log("Eres un niño");
-        break;
-    case (edad>=11 && edad <17):
-        console.log("Eres un adolecente");
-        break;
-    case (edad >= 18 && edad <= 65):
-        console.log("Eres mayor de edad");
-        break;
-    case (edad > 65):
-        console.log("Eres jubilado");
-        break;
-    default:
-        console.log("Edad inválida");
-        break;
-}
+// switch (true) {
+//     case (edad>0 && edad <4):
+//         console.log("Eres un bebé");
+//         break;
+//     case (edad>=4 && edad <11):
+//         console.log("Eres un niño");
+//         break;
+//     case (edad>=11 && edad <17):
+//         console.log("Eres un adolecente");
+//         break;
+//     case (edad >= 18 && edad <= 65):
+//         console.log("Eres mayor de edad");
+//         break;
+//     case (edad > 65):
+//         console.log("Eres jubilado");
+//         break;
+//     default:
+//         console.log("Edad inválida");
+//         break;
+// }
 
 // 7- Ejercicio switch: Calcular el índice de masa corporal (IMC) según el peso y la altura.
 // 8- Ejercicio switch: Verificar la calificación según una nota numérica.
@@ -328,14 +328,68 @@ switch (true) {
 //  Bucles:
 
 //  Nivel de dificultad: Fácil
-// 1- Ejercicio bucles: Imprimir los números del 1 al 10.
-// 2- Ejercicio bucles: Imprimir los números pares del 1 al 20.
-// 3- Ejercicio bucles: Imprimir los números impares del 1 al 15.
-// 4- Ejercicio bucles: Calcular la suma de los primeros 50 números enteros positivos.
+// // 1- Ejercicio bucles: Imprimir los números del 1 al 10.
+
+// let imprimir10=1;
+
+// for (i=0; i<10; i++){
+//     console.log(imprimir10);
+//     imprimir10 += 1;
+// }
+
+// // 2- Ejercicio bucles: Imprimir los números pares del 1 al 20.
+
+// let imprimirpares=2;
+
+// for (i=0; i<20; i++){
+//     console.log(imprimirpares);
+//     imprimirpares += 2;
+// }
+
+// // 3- Ejercicio bucles: Imprimir los números impares del 1 al 15.
+
+// let imprimirImpaares=1;
+
+// for (i=0; i<15; i++){
+//     if (imprimirImpaares%2===0){
+//         imprimirImpaares += 1;
+//     }else{
+//         console.log(imprimirImpaares);
+//         imprimirImpaares += 1;
+//     }
+// }
+
+// // 4- Ejercicio bucles: Calcular la suma de los primeros 50 números enteros positivos.
+
+// let acumulador = 0
+
+// for (i=0; i<=50;i++){
+//     if (i%2===0){
+//         acumulador += i
+//         // console.log(`el indice es ${i} y su valor acumulado es ${acumulador}`) //martin/ conti dejo esta prueba por que me parece didactica
+//     }
+    
+// }
+
+// console.log(`la suma del acumulado es ${acumulador}`);
 
 //  Nivel de dificultad: Moderado
-// 5- Ejercicio bucles: Imprimir la tabla de multiplicar del 5 (del 5 al 50).
-// 6- Ejercicio bucles: Imprimir los caracteres de un string en orden inverso.
+// // 5- Ejercicio bucles: Imprimir la tabla de multiplicar del 5 (del 5 al 50).
+
+// for(i=1; i<=10;i++) console.log(`${i}*5 = ${i*5}`);
+
+// // 6- Ejercicio bucles: Imprimir los caracteres de un string en orden inverso.
+
+// let string = "oditrevni gnirts nu se etse";
+// let nuevoTexto = "" ;
+
+// for (i=string.length; i>=0; i--){
+//     nuevoTexto += string.charAt(i);
+//     console.log(i)
+// }
+// console.log(nuevoTexto)
+
+
 // 7- Ejercicio bucles: Calcular el factorial de un número dado
 // (por ejemplo, 5! = 5 x 4 x 3 x 2 x 1).
 
