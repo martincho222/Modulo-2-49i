@@ -4,11 +4,11 @@
 // 1- Ejercicio switch: Verificar el día de la semana según un número del 1 al 7. LISTO
 // 2- Ejercicio switch: Verificar el tipo de animal según una opción seleccionada. LISTO
 // 3- Ejercicio switch: Verificar el nombre del mes según un número del 1 al 12. LISTO
-// 4- Ejercicio switch: Verificar el tipo de vehículo según una opción.
+// 4- Ejercicio switch: Verificar el tipo de vehículo según una opción. LISTO
 
 //  Nivel de dificultad: Moderado
-// 5- Ejercicio switch: Calcular el costo de envío según el país seleccionado. (lo voy a hacer con provincias porque tengo la base de datos de correo argentino de mi laburo🙂)
-// 6- Ejercicio switch: Verificar el rango de edad de una persona según su edad.
+// 5- Ejercicio switch: Calcular el costo de envío según el país seleccionado. LISTO
+// 6- Ejercicio switch: Verificar el rango de edad de una persona según su edad. LISTO
 // 7- Ejercicio switch: Calcular el índice de masa corporal (IMC) según el peso y la altura.
 // 8- Ejercicio switch: Verificar la calificación según una nota numérica.
 
@@ -149,6 +149,131 @@
 //         break;
 // }
 
+// 4- Ejercicio switch: Verificar el tipo de vehículo según una opción.
+
+// let vehiculo = prompt(`Ingresa el tipo de vehículo (moto, auto, barco)`).toLowerCase();
+
+// switch (vehiculo) {
+//     case "auto":
+//     case "moto":
+//     case "tractor":
+//     case "bicicleta":
+//     case "camioneta":
+//         alert(`Usted seleccionó ${vehiculo} y es un Vehículo Terrestre`);
+//         break;
+//     case "lancha":
+//     case "yate":
+//     case "barco":
+//     case "velero":
+//     case "crusero":
+//         alert(`Usted seleccionó ${vehiculo} y es un Vehículo Acuático`);
+//         break;
+//     case "avión":
+//     case "avion":
+//     case "avioneta":
+//     case "helicóptero":
+//     case "helicoptero":
+//     case "parapente":
+//         alert(`Usted seleccionó ${vehiculo} y es un Vehículo Aéreo`);
+//         break;
+//     default:
+//         alert(`dato invalido o no se encuentra en la base de datos`);
+//         break;
+
+// }
+
+
+//  Nivel de dificultad: Moderado
+
+// 5- Ejercicio switch: Calcular el costo de envío según el país seleccionado.
+
+// let ingresoUsuario = prompt(`ingresa tu pais y te diremos el costo de envio`).toLowerCase();
+
+// switch (ingresoUsuario) {
+//     case "argentina":
+//         alert(`Envío Gratis a Argentina!`);
+//         break;
+//     case "brasil":
+//         alert(`El envío a Brasil cuesta $16 USD`);
+//         break;
+//     case "méxico":
+//     case "mexico":
+//         alert(`El envío a México cuesta $22 USD`);
+//         break;
+//     case "colombia":
+//         alert(`El envío a Colombia cuesta $19 USD`);
+//         break;
+//     case "perú":
+//         alert(`El envío a Perú cuesta $15 USD`);
+//         break;
+//     case "chile":
+//         alert(`El envío a Chile cuesta $12 USD`);
+//         break;
+//     case "ecuador":
+//         alert(`El envío a Ecuador cuesta $16 USD`);
+//         break;
+//     case "venezuela":
+//         alert(`El envío a Venezuela cuesta $21 USD`);
+//         break;
+//     case "bolivia":
+//         alert(`El envío a Bolivia cuesta $14 USD`);
+//         break;
+//     case "paraguay":
+//         alert(`El envío a Paraguay cuesta $12 USD`);
+//         break;
+//     case "uruguay":
+//         alert(`El envío a Uruguay cuesta $13 USD`);
+//         break;
+//     case "costa rica":
+//         alert(`El envío a Costa Rica cuesta $18 USD`);
+//         break;
+//     case "panamá":
+//         alert(`El envío a Panamá cuesta $20 USD`);
+//         break;
+//     case "honduras":
+//         alert(`El envío a Honduras cuesta $19 USD`);
+//         break;
+//     case "guatemala":
+//         alert(`El envío a Guatemala cuesta $20 USD`);
+//         break;
+//     default:
+//         alert(`Dato inválido o no llegamos hasta ahi`);
+//         break;
+// }
+
+// 6- Ejercicio switch: Verificar el rango de edad de una persona según su edad.
+
+// let edad = prompt(`ingresa tu edad`);
+
+// switch (true) {
+//     case (edad >= 0 && edad <= 3):
+//         alert(`tienes ${edad} años y eres un bebé`);
+//         break
+//     case (edad >= 4 && edad <= 14):
+//         alert(`tienes ${edad} años y eres un niño`);
+//         break
+//     case (edad >= 15 && edad <= 17):
+//         alert(`tienes ${edad} años y eres un adolescente`);
+//         break
+//     case (edad >= 18 && edad <= 24):
+//         alert(`tienes ${edad} años y eres un joven adulto`);
+//         break
+//     case (edad >= 25 && edad <= 39):
+//         alert(`tienes ${edad} años y eres un adulto`);
+//         break
+//     case (edad >= 40 && edad <= 56):
+//         alert(`tienes ${edad} años y eres un adulto mayor`);
+//         break
+//     case (edad >= 57):
+//         alert(`tienes ${edad} años y eres un anciano`);
+//         break
+//     default:
+//         alert(`Edad inválida`);
+//         break;
+// }
+
+
+
 
 //  Nivel de dificultad: Difícil
 // 9- Ejercicio switch: Calcular el resultado de una operación matemática según dos números y un operador.
@@ -169,4 +294,4 @@
 
 // alert(`${numero1} ${operador} ${numero2} es igual a ${resultado}`);
 
-// 5- Ejercicio switch: Calcular el costo de envío según el país seleccionado. (lo voy a hacer con provincias porque tengo la base de datos de correo argentino de mi laburo🙂)
+// 5- Ejercicio switch: Calcular el costo de envío según el país seleccionado.
