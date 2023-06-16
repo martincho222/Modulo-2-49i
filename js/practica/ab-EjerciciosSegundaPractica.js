@@ -319,8 +319,32 @@
 // 7- Ejercicio switch: Calcular el índice de masa corporal (IMC) según el peso y la altura.
 // 8- Ejercicio switch: Verificar la calificación según una nota numérica.
 
-//  Nivel de dificultad: Difícil
-// 9- Ejercicio switch: Calcular el resultado de una operación matemática según dos números y un operador.
+// //  Nivel de dificultad: Difícil
+// // 9- Ejercicio switch: Calcular el resultado de una operación matemática según dos números y un operador.
+
+// let numUno = 18;
+// let numDos = 2;
+// let resultado = 0;
+// let operacion = prompt(`que desea hacer con los numero ${numUno} u ${numDos}: " +,-,/,* "`)
+
+// switch (true) {
+//     case (operacion === "+"):
+//         console.log(numUno + numDos);
+//         break;
+//     case (operacion === "-"):
+//         console.log(numUno - numDos);
+//         break;
+//     case (operacion === "/"):
+//         console.log(numUno / numDos);
+//         break;
+//     case (operacion === "*"):
+//         console.log(numUno * numDos);
+//         break;
+//     default:
+//         console.log("operacion inválida");
+//         break;
+// }
+
 // 10- Ejercicio switch: Verificar el día y la hora actual del sistema.
 
 
@@ -332,7 +356,7 @@
 
 // let imprimir10=1;
 
-// for (i=0; i<10; i++){
+// for (let i=0; i<10; i++){
 //     console.log(imprimir10);
 //     imprimir10 += 1;
 // }
@@ -341,7 +365,7 @@
 
 // let imprimirpares=2;
 
-// for (i=0; i<20; i++){
+// for (let i=0; i<20; i++){
 //     console.log(imprimirpares);
 //     imprimirpares += 2;
 // }
@@ -350,7 +374,7 @@
 
 // let imprimirImpaares=1;
 
-// for (i=0; i<15; i++){
+// for (let i=0; i<15; i++){
 //     if (imprimirImpaares%2===0){
 //         imprimirImpaares += 1;
 //     }else{
@@ -363,7 +387,7 @@
 
 // let acumulador = 0
 
-// for (i=0; i<=50;i++){
+// for (let i=0; i<=50;i++){
 //     if (i%2===0){
 //         acumulador += i
 //         // console.log(`el indice es ${i} y su valor acumulado es ${acumulador}`) //martin/ conti dejo esta prueba por que me parece didactica
@@ -376,14 +400,14 @@
 //  Nivel de dificultad: Moderado
 // // 5- Ejercicio bucles: Imprimir la tabla de multiplicar del 5 (del 5 al 50).
 
-// for(i=1; i<=10;i++) console.log(`${i}*5 = ${i*5}`);
+// for(let i=1; i<=10;i++) console.log(`${i}*5 = ${i*5}`);
 
 // // 6- Ejercicio bucles: Imprimir los caracteres de un string en orden inverso.
 
 // let string = "oditrevni gnirts nu se etse";
 // let nuevoTexto = "" ;
 
-// for (i=string.length; i>=0; i--){
+// for (let i=string.length; i>=0; i--){
 //     nuevoTexto += string.charAt(i);
 //     console.log(i)
 // }
@@ -393,13 +417,117 @@
 // 7- Ejercicio bucles: Calcular el factorial de un número dado
 // (por ejemplo, 5! = 5 x 4 x 3 x 2 x 1).
 
+// let numAFactorial = 10;
+// let acumulador = 1;
+
+// for (let i=numAFactorial; i>0;i--){
+//     acumulador = acumulador*i;    
+// }
+
+// console.log(acumulador);
+
 //  Nivel de dificultad: Difícil
 // 8- Ejercicio bucles: Imprimir los números primos del 1 al 50.
+
+// j= 1
+
+// while (j<50){
+//     acumulador=0
+//     for(let i=1;i<=j;i++){
+//         if (j%i==0){
+//             acumulador ++
+//         }
+//     }
+//     if (acumulador==2){
+//         console.log(`Los numeros primos son ${j}`)
+//     }
+//     j++
+// }
+
+
 // 9- Ejercicio bucles: Imprimir los elementos de un array de números.
+
+// let elementos = [1,2,3,25,5,6]
+
+// for (let i=0;i<elementos.length;i++){
+//     console.log(elementos[i]);
+// }
+
 // 10- Ejercicio bucles: Calcular la suma de los dígitos de un número entero positivo.
+
+// let numeroIngresado = 123;
+
+// let suma = 0;
+
+// while (numeroIngresado > 0) {
+
+//     let digito = numeroIngresado % 10;
+
+//     suma += digito;
+
+//     numeroIngresado = Math.floor(numeroIngresado / 10);
+
+// }
+
+// console.log(`La suma de los digitos es ${suma}`);
+
+
 // 11- Ejercicio bucles: Imprimir una serie numérica especial: 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, ...
+// let numero = 5;
+// let serieEspecial = "";
+
+// for (let i = 1; i <= numero; i++) {
+
+//     for (let j = 1; j <= i; j++) {
+
+//     serieEspecial += i + ",";
+
+//     }
+// }
+
+// console.log(serieEspecial);
 
 //  Nivel de dificultad: Experto
 // 12- Ejercicio bucles: Calcular el número de dígitos de un número entero.
-// 13- Ejercicio bucles: Imprimir una serie numérica especial: 1, -2, 3, -4, 5, -6, 7, -8, 9, -10, ...
+
+// let numero = 100;
+// let acumulador=0
+
+// while (numero>0){
+
+//     numero = Math.floor(numero / 10);
+
+//     acumulador ++
+// }
+
+// console.log(acumulador);
+
+// // 13- Ejercicio bucles: Imprimir una serie numérica especial: 1, -2, 3, -4, 5, -6, 7, -8, 9, -10, ...
+
+// let serieNumerica=10;
+// let serieEspecial="";
+// let valorIni = 1;
+
+// for (let i=1; i<=serieNumerica; i++){
+
+//     if(valorIni%2==0){
+//         serieEspecial += valorIni*-1 + ",";
+//     }else{
+//         serieEspecial += i + ",";
+//     }    
+//     valorIni ++
+// }
+
+// console.log(serieEspecial)
+
 // 14- Ejercicio bucles: Calcular la suma de los dígitos pares de un número entero positivo.
+
+// let numeroAAnlizar = 20;
+// let acumulador = 0;
+
+// for (let i=1;i<=20;i++){
+//     if (i%2==0){
+//         acumulador += i;
+//     }
+// }
+// console.log(acumulador)
