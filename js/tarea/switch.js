@@ -203,16 +203,16 @@
     // let imc = peso / (altura * altura);
 
     // switch (true) {
-    //     case imc < 18.5:
+    //     case (imc < 18.5):
     //       console.log("Bajo peso");
     //       break;
-    //     case imc >= 18.5 && imc < 25:
+    //     case (imc >= 18.5 && imc < 25):
     //         console.log("Peso normal");
     //       break;
-    //     case imc >= 25 && imc < 30:
+    //     case (imc >= 25 && imc < 30):
     //       console.log("Sobrepeso");
     //       break;
-    //     case imc >= 30:
+    //     case (imc >= 30):
     //         console.log("Obesidad");
     //       break;
     //     default:
