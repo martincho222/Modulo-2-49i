@@ -68,4 +68,4 @@
 //     return Math.min(a,b);
 // }
 //     )));
-// console.log(typeof arreglo[0]);
+// console.log(typeof arreglo[0]); 
