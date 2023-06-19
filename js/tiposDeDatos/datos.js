@@ -24,6 +24,7 @@ const persona = {
     nombre: "Dani",// clave : valor o key : value
     edad: 33,
     ciudad: 'San Miguel de Tucuman'
+    
 }
 const auto = {
     marca: "Ford",
