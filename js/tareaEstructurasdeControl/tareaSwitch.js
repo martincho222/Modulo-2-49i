@@ -9,12 +9,12 @@
 //  Nivel de dificultad: Moderado
 // 5- Ejercicio switch: Calcular el costo de envío según el país seleccionado. LISTO
 // 6- Ejercicio switch: Verificar el rango de edad de una persona según su edad. LISTO
-// 7- Ejercicio switch: Calcular el índice de masa corporal (IMC) según el peso y la altura.
-// 8- Ejercicio switch: Verificar la calificación según una nota numérica.
+// 7- Ejercicio switch: Calcular el índice de masa corporal (IMC) según el peso y la altura. LISTO
+// 8- Ejercicio switch: Verificar la calificación según una nota numérica. LISTO
 
 //  Nivel de dificultad: Difícil
 // 9- Ejercicio switch: Calcular el resultado de una operación matemática según dos números y un operador. LISTO
-// 10- Ejercicio switch: Verificar el día y la hora actual del sistema.
+// 10- Ejercicio switch: Verificar el día y la hora actual del sistema.LISTO
 
 // ------RESUELTOS------
 
@@ -272,8 +272,62 @@
 //         break;
 // }
 
+// 7- Ejercicio switch: Calcular el índice de masa corporal (IMC) según el peso y la altura.
+
+// let peso = parseFloat(prompt(`ingresa tu peso`));
+// let altura = parseFloat(prompt(`ingresa tu altura en cm`));
+// let alturaEnMts = altura / 100;
+// let imc = peso / Math.pow(alturaEnMts, 2);
+
+// switch (true) {
+//     case (imc <= 0 && imc <= 18.49):
+//         alert(`tienes un IMC de ${imc} y tu clasificacion es peso bajo`);
+//         break
+//     case (imc <= 18.50 && imc <= 24.99):
+//         alert(`tienes un IMC de ${imc} y tu clasificacion es peso normal`);
+//         break
+//     case (imc <= 25 && imc <= 29.99):
+//         alert(`tienes un IMC de ${imc} y tu clasificacion es sobrepeso`);
+//         break
+//     case (imc <= 30 && imc <= 34.99):
+//         alert(`tienes un IMC de ${imc} y tu clasificacion es obesidad leve`);
+//         break
+//     case (imc <= 35 && imc <= 35.99):
+//         alert(`tienes un IMC de ${imc} y tu clasificacion es obesidad media`);
+//         break
+//     case (imc <= 36):
+//         alert(`tienes un IMC de ${imc} y tu clasificacion es obesidad mórbida`);
+//         break
+//     default:
+//         alert(`imc inválida`);
+//         break;
+// }
+
+// 8- Ejercicio switch: Verificar la calificación según una nota numérica.
 
 
+// let nota = prompt(`ingresa tu clasificacion de 0 a 1 y te dire como seria en el sistema alfabetico`);
+
+// switch (true) {
+//     case (nota === 10):
+//         alert(`Tu nota es ${nota} y significa Excelente`);
+//         break;
+//     case (nota >= 8 && nota <= 9):
+//         alert(`Tu nota es ${nota} y significa Muy Bueno`);
+//         break;
+//     case (nota >= 6 && nota <= 7):
+//         alert(`Tu nota es ${nota} y significa Bueno`);
+//         break;
+//     case (nota >= 4 && nota <= 5):
+//         alert(`Tu nota es ${nota} y significa Regular - Desaprobado`);
+//         break;
+//     case (nota >= 0 && nota <= 3):
+//         alert(`Tu nota es ${nota} y significa Aplazado`);
+//         break;
+//     default:
+//         alert("Nota inválida. Por favor, ingresa una nota válida.");
+//         break;
+// }
 
 //  Nivel de dificultad: Difícil
 // 9- Ejercicio switch: Calcular el resultado de una operación matemática según dos números y un operador.
@@ -294,4 +348,39 @@
 
 // alert(`${numero1} ${operador} ${numero2} es igual a ${resultado}`);
 
-// 5- Ejercicio switch: Calcular el costo de envío según el país seleccionado.
+
+// 10- Ejercicio switch: Verificar el día y la hora actual del sistema.
+
+// alert(`Voy a decirte que dia y que hora es`);
+// let fechaActual = new Date();
+// let diaDeLaSemana = fechaActual.getDay();
+// let diaEscrito = ``;
+
+// switch (diaDeLaSemana) {
+//     case 0:
+//         diaEscrito = `Domingo`;
+//         break;
+//     case 1:
+//         diaEscrito = `Lunes`;
+//         break;
+//     case 2:
+//         diaEscrito = `Martes`;
+//         break;
+//     case 3:
+//         diaEscrito = `Miércoles`;
+//         break;
+//     case 4:
+//         diaEscrito = `Jueves`;
+//         break;
+//     case 5:
+//         diaEscrito = `Viernes`;
+//         break;
+//     case 6:
+//         diaEscrito = `Sábado`;
+//         break;
+// }
+
+// let horaActual = fechaActual.getHours();
+// let minutosActuales = fechaActual.getMinutes();
+
+// alert(`Hoy es ${diaEscrito} y son las ${horaActual}:${minutosActuales}`);
