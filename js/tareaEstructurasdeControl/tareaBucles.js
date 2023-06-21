@@ -13,7 +13,7 @@
 // (por ejemplo, 5! = 5 x 4 x 3 x 2 x 1).
 
 //  Nivel de dificultad: Difícil
-// 8- Ejercicio bucles: Imprimir los números primos del 1 al 50.
+// 8- Ejercicio bucles: Imprimir los números primos del 1 al 50. LISTO
 // 9- Ejercicio bucles: Imprimir los elementos de un array de números.
 // 10- Ejercicio bucles: Calcular la suma de los dígitos de un número entero positivo.
 // 11- Ejercicio bucles: Imprimir una serie numérica especial: 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, ...
@@ -101,3 +101,25 @@
 // } while (contador > 0);
 
 // console.log(`El factorial de ${numero} es: ${resultado}`);
+
+// 8- Ejercicio bucles: Imprimir los números primos del 1 al 50.
+
+// let numero = 1;
+// let esPrimo = true;
+
+// while (numero <= 50) {
+//     let esPrimo = true;
+
+//     for (let i = 2; i <= numero / 2; i++) {
+//         if (numero % i === 0) {
+//             esPrimo = false;
+//             break;
+//         }
+//     }
+
+//     if (esPrimo) {
+//         console.log(`${numero} es primo`);
+//     }
+
+//     numero++;
+// }
