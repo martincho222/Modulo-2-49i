@@ -12,7 +12,7 @@
 //  Ejercicio 4: Promedio de elementos. LISTO
 // Escribe una función que calcule el promedio de todos los elementos en un arreglo de números.
 
-//  Ejercicio 5: Ordenar arreglo.
+//  Ejercicio 5: Ordenar arreglo. LISTO
 // Escribe una función que ordene un arreglo de números de forma ascendente.
 
 //  Ejercicio 6: Filtrar pares.
@@ -122,3 +122,30 @@
 // resultado = sacarPromedio(notas);
 // console.log(`Las notas ingresadas ${notas}`);
 // console.log(`El promedio seria ${resultado}`);
+
+//  Ejercicio 5: Ordenar arreglo.
+// Escribe una función que ordene un arreglo de números de forma ascendente.
+
+// function ordenarAsc(arreglo) {
+//     let copiaArreglo = arreglo.slice();
+//     let ordenados = copiaArreglo.sort();
+//     return ordenados
+// }
+// let ejemplo = [5, 1, 3, 6, 4, 0]
+// let resultado = ordenarAsc(ejemplo)
+// console.log(`numero normal ${ejemplo}`);
+// console.log(`ordenado ${resultado}`);
+
+//  Ejercicio 6: Filtrar pares.
+// Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo solo con los números pares.
+
+// function filtrarPares(arreglo) {
+//     let filtrados = arreglo.filter(function(numero) {
+//         return numero % 2 === 0;
+//     })
+//     return filtrados;
+// }
+// let ejemplo = [5, 2, 10, 65, 8]
+// let resultado = filtrarPares(ejemplo);
+// console.log(`${ejemplo}`);
+// console.log(`${resultado}`);
