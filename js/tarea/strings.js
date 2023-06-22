@@ -67,6 +67,6 @@
 // let palabra = prompt("Ingresa una palabra a buscar").toLowerCase();
 // let array = cadena.split(' ');
 
-// let contador = array.filter((p) => p === palabra);
+// let contador = array.filter( p => p === palabra);
 
 // console.log(`Su palabra aparece ${contador} veces.`);
