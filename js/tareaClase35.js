@@ -27,13 +27,13 @@
 //  Ejercicio 9: Multiplicar elementos. LISTO
 // Escribe una función que tome un arreglo de números y un factor, y devuelva un nuevo arreglo donde cada elemento sea multiplicado por ese factor.
 
-//  Ejercicio 10: Elemento único.
+//  Ejercicio 10: Elemento único. LISTO
 // Escribe una función que encuentre el único elemento no repetido en un arreglo de números, donde todos los demás elementos aparecen al menos dos veces.
 
 //  Ejercicio 11: Buscar subcadena.
 // Escribe una función que tome un arreglo de strings y una subcadena, y devuelva un nuevo arreglo con solo aquellos strings que contengan la subcadena.
 
-//  Ejercicio 12: Invertir cadena.
+//  Ejercicio 12: Invertir cadena. LISTO
 // Escribe una función que tome una cadena de texto y la devuelva invertida.
 
 //  Ejercicio 13: Contar vocales.
@@ -181,3 +181,48 @@
 // let ej1 = [10, 5, 2, 1]
 // let mult = 2
 // console.log(multiplicar(ej1, mult));
+
+
+//  Ejercicio 10: Elemento único.
+// Escribe una función que encuentre el único elemento no repetido en un arreglo de números, donde todos los demás elementos aparecen al menos dos veces.
+
+// function elementoUnico(arreglo) {
+//     resultado = arreglo.filter(function(numero, indice, array) {
+//         return array.indexOf(numero) === array.lastIndexOf(numero);
+//     });
+//     return resultado
+// }
+
+// ej1 = [10, 10, 1, 2, 2]
+// console.log(elementoUnico(ej1));
+
+
+//  Ejercicio 11: Buscar subcadena.
+// Escribe una función que tome un arreglo de strings y una subcadena, y devuelva un nuevo arreglo con solo aquellos strings que contengan la subcadena.
+
+//  Ejercicio 12: Invertir cadena.
+// Escribe una función que tome una cadena de texto y la devuelva invertida.
+
+// function revertir(string) {
+//     let palabra = string.split("");
+//     return palabra.reverse().join("");
+// }
+
+// let ej1 = "perro";
+// console.log(revertir(ej1));
+
+//  Ejercicio 13: Contar vocales.
+// Escribe una función que tome una cadena de texto y devuelva el número de vocales que contiene.
+
+// function contarVocales(string) {
+//     let vocales = ["a", "e", "i", "o", "u"];
+//     let palabraSeparada = string.toLowerCase().split("");
+//     let arrayPalabra = palabraSeparada.filter(function(elemento) {
+//         return vocales.includes(elemento);
+//     });
+//     vocalesUnidas = arrayPalabra.slice();
+//     return `la palabra ${string} tiene ${vocalesUnidas.length} vocales`;
+// }
+
+// let ej1 = "Arte"
+// console.log(contarVocales(ej1));
