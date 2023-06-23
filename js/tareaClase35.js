@@ -15,16 +15,16 @@
 //  Ejercicio 5: Ordenar arreglo. LISTO
 // Escribe una función que ordene un arreglo de números de forma ascendente.
 
-//  Ejercicio 6: Filtrar pares.
+//  Ejercicio 6: Filtrar pares. LISTO
 // Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo solo con los números pares.
 
-//  Ejercicio 7: Contar elementos.
+//  Ejercicio 7: Contar elementos. LISTO
 // Escribe una función que tome un arreglo y un elemento, y devuelva el número de veces que ese elemento aparece en el arreglo.
 
-//  Ejercicio 8: Concatenar arreglos.
+//  Ejercicio 8: Concatenar arreglos. LISTO
 // Escribe una función que tome dos arreglos y devuelva un nuevo arreglo que contenga todos los elementos de ambos arreglos.
 
-//  Ejercicio 9: Multiplicar elementos.
+//  Ejercicio 9: Multiplicar elementos. LISTO
 // Escribe una función que tome un arreglo de números y un factor, y devuelva un nuevo arreglo donde cada elemento sea multiplicado por ese factor.
 
 //  Ejercicio 10: Elemento único.
@@ -84,13 +84,6 @@
 // resultado = mayor(...array);
 // console.log(`${resultado}`);
 
-// MANERA 2 (no la entiendo)
-
-// array.forEach(function(elemento) {
-//     if (elemento > mayor) {
-//         mayor = elemento;
-//     }
-// })
 
 //  Ejercicio 3: Eliminar duplicados.
 // Escribe una función que tome un arreglo y elimine todos los elementos duplicados, devolviendo un nuevo arreglo sin duplicados.
@@ -149,3 +142,42 @@
 // let resultado = filtrarPares(ejemplo);
 // console.log(`${ejemplo}`);
 // console.log(`${resultado}`);
+
+//  Ejercicio 7: Contar elementos.
+// Escribe una función que tome un arreglo y un elemento, y devuelva el número de veces que ese elemento aparece en el arreglo.
+
+// function contador(arreglo, comparador) {
+//     let filtrados = arreglo.filter(function(elemento) {
+//         return elemento === comparador;
+//     })
+//     let cantidad = filtrados.length;
+//     return console.log(`el numero ${comparador} aparece en el arreglo [${arreglo}] ${cantidad} veces`);
+// }
+
+// let array = [10, 5, 2, 10, 5, 0]
+// resultado = contador(array, 10);
+
+//  Ejercicio 8: Concatenar arreglos.
+// Escribe una función que tome dos arreglos y devuelva un nuevo arreglo que contenga todos los elementos de ambos arreglos.
+
+// function concatenar(array1, array2) {
+//     let concatenados = [...array1, ...array2]
+//     return concatenados
+// }
+// let ej1 = [10, 5, 2, 1]
+// let ej2 = [5, 6, 0, 2]
+// console.log(concatenar(ej1, ej2));
+
+//  Ejercicio 9: Multiplicar elementos.
+// Escribe una función que tome un arreglo de números y un factor, y devuelva un nuevo arreglo donde cada elemento sea multiplicado por ese factor.
+
+// function multiplicar(array, factor) {
+//     operacion = array.map(function(elemento) {
+//         return factor * elemento;
+//     })
+//     return operacion
+// }
+
+// let ej1 = [10, 5, 2, 1]
+// let mult = 2
+// console.log(multiplicar(ej1, mult));
