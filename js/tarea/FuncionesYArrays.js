@@ -237,36 +237,103 @@ Ejercicio 15: Sumar matrices
 Escribe una función que tome dos matrices bidimensionales y devuelva una nueva matriz que sea la suma de ambas matrices.
 */
 
-let num = [[1, 2, 3], [4, 5, 6]];
-let num2 = [[7, 8, 9], [10, 11, 12]];
-function sumarMatrices(m1, m2) {
-  var matrizSuma = m1.map( (fila, indiceFila) => fila.map( (elemento, indiceColumna) => elemento + m2[indiceFila][indiceColumna]));
+// let num = [[1, 2, 3], [4, 5, 6]];
+// let num2 = [[7, 8, 9], [10, 11, 12]];
+// function sumarMatrices(m1, m2) {
+//   var matrizSuma = m1.map( (fila, indiceFila) => fila.map( (elemento, indiceColumna) => elemento + m2[indiceFila][indiceColumna]));
 
-  return matrizSuma;
-}
-console.log(sumarMatrices(num, num2));
+//   return matrizSuma;
+// }
+// console.log(sumarMatrices(num, num2));
 
 /*
 Ejercicio 16: Filtrar por propiedades
 Escribe una función que tome un arreglo de objetos y una propiedad, y devuelva un nuevo arreglo solo con aquellos objetos que tienen esa propiedad.
 */
 
+// const personas = [
+//     { nombre: "Sergio", edad: 25 },
+//     { nombre: "Martin", ciudad: "Madrid" },
+//     { nombre: "Lucas", edad: 30, profesion: "Ingeniero" },
+//     { nombre: "Conty", ciudad: "Barcelona", profesion: "Abogada" }
+// ];
+
+// function filtrarObjetosPorPropiedad(array, propiedad) {
+//     return array.filter( objeto => objeto.hasOwnProperty(propiedad));
+// }
+
+// console.log(filtrarObjetosPorPropiedad(personas, "profesion"));
+
 /*
 Ejercicio 17: Calcular edad promedio
 Escribe una función que tome un arreglo de objetos con propiedades de "nombre" y "edad", y devuelva la edad promedio de todas las personas en el arreglo.
 */
+
+// const personas = [
+//     { nombre: "Sergio", edad: 20 },
+//     { nombre: "Martin", edad: 30 },
+//     { nombre: "Lucas", edad: 35 },
+//     { nombre: "Conty",  edad: 25 },
+//     { nombre: "Javier",  edad: 23 }
+// ];
+
+// function edad(array) {
+//     const edades = array.map( persona => persona.edad );
+//     const suma = edades.reduce( (acumulador, edad) => acumulador + edad, 0 );
+//     const promedio = suma / edades.length;
+//     return promedio;
+// }
+
+// console.log(edad(personas));
 
 /*
 Ejercicio 18: Buscar máximo por propiedad
 Escribe una función que tome un arreglo de objetos con propiedades numéricas y una propiedad, y devuelva el objeto que tenga el valor máximo en esa propiedad.
 */
 
+// const personas = [
+//     { nombre: "Sergio", edad: 20 },
+//     { nombre: "Martin", edad: 30 },
+//     { nombre: "Lucas", edad: 35 },
+//     { nombre: "Conty",  edad: 25 },
+//     { nombre: "Javier",  edad: 23 }
+// ];
+
+// function mayor(array, prop) {
+//     const mayor = array.reduce( (edadMax, edad) => edad[prop] > edadMax[prop] ? edad : edadMax);
+//     return mayor;
+//   }
+  
+// console.log(mayor(personas, "edad"));
+
 /*
 Ejercicio 19: Contar palabras repetidas
 Escribe una función que tome una cadena de texto y devuelva un objeto que contenga cada palabra como propiedad y el número de veces que aparece como valor.
 */
 
+// let texto = prompt("Ingrese una cadena de texto")
+
+// function contar(cadena) {
+//     const palabras = cadena.split(" ");
+//     const contador = {};
+    
+//     palabras.forEach(palabra => {
+//       contador[palabra] = (contador[palabra] || 0) + 1;
+//     });
+  
+//     return contador;
+// }
+
+// console.log(contar(texto));
+
 /*
 Ejercicio 20: Calcular suma acumulada
 Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo donde cada elemento sea la suma acumulada de los elementos anteriores.
 */
+
+// let num = [1, 3, 5, 6, 2];
+// function suma(array) {
+//     const suma = array.reduce( (acumulador, edad) => acumulador + edad, 0 );
+//     return suma;
+// }
+// console.log(suma(num));
