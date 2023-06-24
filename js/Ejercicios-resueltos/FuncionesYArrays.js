@@ -54,7 +54,9 @@
 // Escribe una función que ordene un arreglo de números de forma ascendente.
 // const numeros=[1,4,5,7,2];
 // const ordenaArreglo=function(arreglo){
-//     return arreglo.sort();
+//     return arreglo.sort((a,b)=>{
+//     return a-b;
+// });
 // }
 // console.log("El arreglo ordenado es",ordenaArreglo(numeros));
 
@@ -273,7 +275,7 @@
 // Ejercicio 20: Calcular suma acumulada
 // Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo donde cada elemento sea la suma acumulada de los elementos anteriores.
 // const numeros=[1,2,3,4,5,6];
-// const acumulado=function(arreglo){
+// const acumulado=(arreglo)=>{
 //     let acumulador=[];
 //     let suma=0;
 //     for (let i=0;i<arreglo.length;i++){
