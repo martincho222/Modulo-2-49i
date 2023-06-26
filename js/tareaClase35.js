@@ -48,10 +48,10 @@
 //  Ejercicio 16: Filtrar por propiedades. LISTO
 // Escribe una función que tome un arreglo de objetos y una propiedad, y devuelva un nuevo arreglo solo con aquellos objetos que tienen esa propiedad.
 
-//  Ejercicio 17: Calcular edad promedio.
+//  Ejercicio 17: Calcular edad promedio. LISTO
 // Escribe una función que tome un arreglo de objetos con propiedades de "nombre" y "edad", y devuelva la edad promedio de todas las personas en el arreglo.
 
-//  Ejercicio 18: Buscar máximo por propiedad.
+//  Ejercicio 18: Buscar máximo por propiedad. LISTO
 // Escribe una función que tome un arreglo de objetos con propiedades numéricas y una propiedad, y devuelva el objeto que tenga el valor máximo en esa propiedad.
 
 //  Ejercicio 19: Contar palabras repetidas.
@@ -318,3 +318,46 @@
 // let color = "color"
 
 // console.log(tieneProp(remeras, color));
+
+
+//  Ejercicio 17: Calcular edad promedio.
+// Escribe una función que tome un arreglo de objetos con propiedades de "nombre" y "edad", y devuelva la edad promedio de todas las personas en el arreglo.
+
+// let persona1 = { nombre: "Gonzalo", edad: 25 }
+// let persona2 = { nombre: "Severo", edad: 25 }
+// let persona3 = { nombre: "Jose", edad: 24 }
+// let persona4 = { nombre: "Emilio", edad: 29 }
+
+// function sumarEdades(obj) {
+//     let suma = 0;
+//     for (i = 0; i < obj.length; i++) {
+//         suma += obj[i].edad
+//     }
+//     return suma / obj.length;
+// }
+
+// let personas = [persona1, persona2, persona3, persona4]
+// console.log(sumarEdades(personas));
+
+//  Ejercicio 18: Buscar máximo por propiedad.
+// Escribe una función que tome un arreglo de objetos con propiedades numéricas y una propiedad, y devuelva el objeto que tenga el valor máximo en esa propiedad.
+
+// let persona1 = { nombre: "Gonzalo", edad: 25 }
+// let persona2 = { nombre: "Severo", edad: 25 }
+// let persona3 = { nombre: "Jose", edad: 24 }
+// let persona4 = { nombre: "Emilio", edad: 29 }
+
+// function cualEsMayor(obj) {
+
+//     function mayor(array) {
+//         return Math.max(...array);
+//     }
+//     arrayEdades = [];
+//     for (i = 0; i < obj.length; i++) {
+//         resultado = arrayEdades.push(obj[i].edad);
+//     }
+//     return console.log(mayor(arrayEdades));
+// }
+
+// let personas = [persona1, persona2, persona3, persona4]
+// console.log(cualEsMayor(personas));
