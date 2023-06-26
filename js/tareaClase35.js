@@ -36,7 +36,7 @@
 //  Ejercicio 12: Invertir cadena. LISTO
 // Escribe una función que tome una cadena de texto y la devuelva invertida.
 
-//  Ejercicio 13: Contar vocales.
+//  Ejercicio 13: Contar vocales. LISTO
 // Escribe una función que tome una cadena de texto y devuelva el número de vocales que contiene.
 
 //  Ejercicio 14: Palíndromo.
@@ -226,3 +226,42 @@
 
 // let ej1 = "Arte"
 // console.log(contarVocales(ej1));
+
+//  Ejercicio 14: Palíndromo.
+// Escribe una función que determine si una cadena de texto es un palíndromo (se lee igual de izquierda a derecha y de derecha a izquierda).
+
+// function esPalindromo(palabra) {
+//     for (let i = 0; i < palabra.length; i++) {
+//         let letra1 = palabra[i];
+//         let letra2 = palabra[i + palabra.length - 1];
+//         if (letra1 === letra2) {
+//             console.log(`es un palindromo`);
+//         } else {
+//             console.log(`no es palindromo`);
+//         }
+//     }
+// }
+
+// let palabra = prompt(`elije una palabra y te diré si es o no palindromo`);
+// let contador = 1;
+// let contadorNoEs = 0;
+// for (let i = 0; i < palabra.length; i++) {
+
+//     let letra1 = palabra[i];
+//     let letra2 = palabra[(i + palabra.length) - contador];
+//     if (letra1.toLowerCase() === letra2.toLowerCase()) {
+//         // console.log(`${letra1} y ${letra2} son iguales. i actual ${i}`);
+//         // console.log(`contador en ${contador}`);
+//     } else {
+//         contadorNoEs--;
+//     }
+//     contador++;
+//     contador++;
+//     // lo pongo dos veces porque la primera iteracion necesito que sea asi, pero luego hay que sumar dos para que no se cancele contador con el indice
+
+// }
+
+// if (contadorNoEs < 0) {
+//     console.log(`su palabra ${palabra} NO es un palindromo`);
+
+// } else { console.log(`su palabra ${palabra} es un PALINDROMO`); } {}
