@@ -30,7 +30,7 @@
 //  Ejercicio 10: Elemento único. LISTO
 // Escribe una función que encuentre el único elemento no repetido en un arreglo de números, donde todos los demás elementos aparecen al menos dos veces.
 
-//  Ejercicio 11: Buscar subcadena.
+//  Ejercicio 11: Buscar subcadena.  LISTO
 // Escribe una función que tome un arreglo de strings y una subcadena, y devuelva un nuevo arreglo con solo aquellos strings que contengan la subcadena.
 
 //  Ejercicio 12: Invertir cadena. LISTO
@@ -39,13 +39,13 @@
 //  Ejercicio 13: Contar vocales. LISTO
 // Escribe una función que tome una cadena de texto y devuelva el número de vocales que contiene.
 
-//  Ejercicio 14: Palíndromo.
+//  Ejercicio 14: Palíndromo. LISTO
 // Escribe una función que determine si una cadena de texto es un palíndromo (se lee igual de izquierda a derecha y de derecha a izquierda).
 
-//  Ejercicio 15: Sumar matrices.
+//  Ejercicio 15: Sumar matrices. LISTO
 // Escribe una función que tome dos matrices bidimensionales y devuelva una nueva matriz que sea la suma de ambas matrices.
 
-//  Ejercicio 16: Filtrar por propiedades.
+//  Ejercicio 16: Filtrar por propiedades. LISTO
 // Escribe una función que tome un arreglo de objetos y una propiedad, y devuelva un nuevo arreglo solo con aquellos objetos que tienen esa propiedad.
 
 //  Ejercicio 17: Calcular edad promedio.
@@ -200,6 +200,17 @@
 //  Ejercicio 11: Buscar subcadena.
 // Escribe una función que tome un arreglo de strings y una subcadena, y devuelva un nuevo arreglo con solo aquellos strings que contengan la subcadena.
 
+// function filtrarArray(arrayString, subCadena) {
+//     let filtrado = arrayString.filter(function(elemento) {
+//         return elemento === subCadena;
+//     });
+//     return filtrado
+// }
+
+// let ej1 = ["perro", "gato", "raton", "oso"];
+// let ej2 = "raton";
+// console.log(filtrarArray(ej1, ej2));
+
 //  Ejercicio 12: Invertir cadena.
 // Escribe una función que tome una cadena de texto y la devuelva invertida.
 
@@ -231,37 +242,79 @@
 // Escribe una función que determine si una cadena de texto es un palíndromo (se lee igual de izquierda a derecha y de derecha a izquierda).
 
 // function esPalindromo(palabra) {
+//     let contador = 1;
+//     let contadorNoEs = 0;
 //     for (let i = 0; i < palabra.length; i++) {
+
 //         let letra1 = palabra[i];
-//         let letra2 = palabra[i + palabra.length - 1];
-//         if (letra1 === letra2) {
-//             console.log(`es un palindromo`);
+//         let letra2 = palabra[(i + palabra.length) - contador];
+//         if (letra1.toLowerCase() === letra2.toLowerCase()) {
+//             // console.log(`${letra1} y ${letra2} son iguales. i actual ${i}`);
+//             // console.log(`contador en ${contador}`);
 //         } else {
-//             console.log(`no es palindromo`);
+//             contadorNoEs--;
 //         }
-//     }
-// }
+//         contador++;
+//         contador++;
+//         // lo pongo dos veces porque la primera iteracion necesito que sea asi, pero luego hay que sumar dos para que no se cancele contador con el indice
 
-// let palabra = prompt(`elije una palabra y te diré si es o no palindromo`);
-// let contador = 1;
-// let contadorNoEs = 0;
-// for (let i = 0; i < palabra.length; i++) {
-
-//     let letra1 = palabra[i];
-//     let letra2 = palabra[(i + palabra.length) - contador];
-//     if (letra1.toLowerCase() === letra2.toLowerCase()) {
-//         // console.log(`${letra1} y ${letra2} son iguales. i actual ${i}`);
-//         // console.log(`contador en ${contador}`);
-//     } else {
-//         contadorNoEs--;
 //     }
-//     contador++;
-//     contador++;
-//     // lo pongo dos veces porque la primera iteracion necesito que sea asi, pero luego hay que sumar dos para que no se cancele contador con el indice
+
+//     if (contadorNoEs < 0) {
+//         console.log(`su palabra ${palabra} NO es un palindromo`);
+
+//     } else { console.log(`su palabra ${palabra} es un PALINDROMO`); } {}
 
 // }
 
-// if (contadorNoEs < 0) {
-//     console.log(`su palabra ${palabra} NO es un palindromo`);
+// let ej1 = "perro";
+// resultado = esPalindromo(ej1);
 
-// } else { console.log(`su palabra ${palabra} es un PALINDROMO`); } {}
+
+//  Ejercicio 15: Sumar matrices.
+// Escribe una función que tome dos matrices bidimensionales y devuelva una nueva matriz que sea la suma de ambas matrices.
+
+
+// function sumarArray(array1, array2) {
+//     // tome de idea representarlos como [a,b][c,d]
+//     let a = array1.slice(0, 1);
+//     let b = array1.slice(1, 2);
+//     let c = array2.slice(0, 1);
+//     let d = array2.slice(1, 2);
+//     let suma1 = parseInt(a) + parseInt(c);
+//     let suma2 = parseInt(b) + parseInt(d);
+//     resultado = suma1 + suma2;
+//     console.log([suma1, suma2]);
+// }
+
+// let array1 = [1, 2]
+// let array2 = [3, 4]
+
+// console.log(sumarArray(array1, array2));
+
+//  Ejercicio 16: Filtrar por propiedades.
+// Escribe una función que tome un arreglo de objetos y una propiedad, y devuelva un nuevo arreglo solo con aquellos objetos que tienen esa propiedad.
+
+// function tieneProp(array, propiedad) {
+//     let filtrado = array.filter(function(elemento) {
+//         return elemento.hasOwnProperty(propiedad);
+//     })
+//     return filtrado;
+// }
+
+// let remera1 = {
+//     precio: 100,
+//     color: "rojo",
+// }
+// let remera2 = {
+//     precio: 150,
+//     color: "verde",
+// }
+// let remera3 = {
+//     precio: 150,
+// }
+
+// let remeras = [remera1, remera2, remera3];
+// let color = "color"
+
+// console.log(tieneProp(remeras, color));
