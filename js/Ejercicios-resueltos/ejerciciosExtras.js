@@ -64,15 +64,59 @@
 
 // console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
 
+//FIBO
+// const secuenciaFibo = (cantidad) => {
+//     let secuencia = [0,1];
+//     let ultimo =1;
+//     for (let i=2; ultimo.toString().length<cantidad; i++){
+//         let siguiente = secuencia [i-1] + secuencia[i-2];
+//         secuencia.push(siguiente);
+//         ultimo = siguiente;
+//     }
+//     return secuencia;
+// }
+// console.log(secuenciaFibo(2));
 
-const secuenciaFibo = (cantidad) => {
-    let secuencia = [0,1];
-    let ultimo =1;
-    for (let i=2; ultimo.toString().length<cantidad; i++){
-        let siguiente = secuencia [i-1] + secuencia[i-2];
-        secuencia.push(siguiente);
-        ultimo = siguiente;
-    }
-    return secuencia;
-}
-console.log(secuenciaFibo(2));
+// Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+// Examples
+// pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+// pigIt('Hello world !');     // elloHay orldway !
+
+// function pigIt(str){
+//   //Code here
+//   let cadena = str.split(" ");
+//   let nuevaCadena=[];
+//   for (let i=0; i<cadena.length;i++){
+//     console.log("Cadena [i]", cadena[i]);
+//     let marks="!¿¡?.,"
+//     let firstLetter=cadena[i];
+//     if (!marks.includes(firstLetter)){
+//         console.log("First letter",firstLetter.slice(1)); 
+//     nuevaCadena[i]=firstLetter.slice(1)+firstLetter[0]+"ay"
+//     console.log("Elemento de la cadena:",nuevaCadena);
+//     }
+//     else{
+//         nuevaCadena[i]=firstLetter;
+//     }
+    
+//   }
+//   return console.log(nuevaCadena.join(" "));
+// }
+// pigIt('O tempora o mores !');
+
+
+// ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet. ROT13 is an example of the Caesar cipher.
+
+    // Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".
+
+// function rot13(message){
+//     //your code here
+//     let abcedario="abcdefghijklmnñopqrstuvxyz";
+//     let abc=abcedario.split("");
+//     let arregloMensaje=message.split(" ");
+//     let mensajeCifrado=[];
+//     for (let i=0; i<arregloMensaje.length;i++){
+//         let letrasMensaje=arregloMensaje[i].split("");
+
+//     }
+//   }
