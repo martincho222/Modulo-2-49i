@@ -32,7 +32,7 @@
 // console.log(concatenado.join("")); // El método join() une todos los elementos de una matriz
 
 // //  Tarea String 5:
-// // Solicitar al usuario que ingrese una cadena y un número, y mostrar en consola la cadena truncada en la posición del número ingresado.
+// // Solicitar al usuario que ingrese una cadena y un número,phglhn´gc y mostrar en consola la cadena truncada en la posición del número ingresado.
 
 // let cadenaExtensa = prompt("ingrese una cadena para buscar:");
 // let largoCadena = cadenaExtensa.length;
