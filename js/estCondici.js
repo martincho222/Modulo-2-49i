@@ -41,13 +41,21 @@ if(numero % 3 === 0){
 
 //Nivel de dificultad: Moderado
 //4- Ejercicio if-else: Calcular el mayor de tres números.
+
 /*
 const numero1 = parseFloat(prompt("ingresar un numero"))
 const numero2 = parseFloat(prompt("ingresar un numero"))
 const numero3 = parseFloat(prompt("ingresar un numero"))
+
+
+        if ( numero1 > numero2 && numero1 > numero3){
+            console.log(numero1)
+        } else if( numero2 > numero1 && numero2 > numero3){
+            console.log(numero2)
+        } else if( numero3 > numero1 && numero3 > numero2){
+            console.log(numero3)
+        }
 */
-
-
 
 //5- Ejercicio if-else: Determinar si un año es bisiesto.
 
