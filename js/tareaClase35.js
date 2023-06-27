@@ -54,11 +54,11 @@
 //  Ejercicio 18: Buscar máximo por propiedad. LISTO
 // Escribe una función que tome un arreglo de objetos con propiedades numéricas y una propiedad, y devuelva el objeto que tenga el valor máximo en esa propiedad.
 
-//  Ejercicio 19: Contar palabras repetidas.
+//  Ejercicio 19: Contar palabras repetidas. (estoy con inconvenientes con este🙃)
 // Escribe una función que tome una cadena de texto y devuelva un objeto que contenga cada palabra como propiedad y el
 // número de veces que aparece como valor.
 
-//  Ejercicio 20: Calcular suma acumulada.
+//  Ejercicio 20: Calcular suma acumulada. LISTO
 // Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo donde cada elemento sea la suma acumulada de los elementos anteriores.
 
 // DESAROLLO:
@@ -361,3 +361,21 @@
 
 // let personas = [persona1, persona2, persona3, persona4]
 // console.log(cualEsMayor(personas));
+
+
+//  Ejercicio 20: Calcular suma acumulada.
+// Escribe una función que tome un arreglo de números y devuelva un nuevo arreglo donde cada elemento sea la suma acumulada de los elementos anteriores.
+
+
+// function sumaAcumulada(arreglo) {
+//     let resultado = []
+//     let suma = 0;
+//     for (i = 0; i < arreglo.length; i++) {
+//         suma += arreglo[i];
+//         resultado.push(suma);
+//     }
+//     return resultado;
+// }
+
+// ej1 = [1, 2, 10, 2]
+// console.log(sumaAcumulada(ej1));
