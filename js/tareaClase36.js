@@ -32,7 +32,7 @@
 
 // 13- Extiende la clase Estudiante del ejercicio anterior para incluir un método que determine si el estudiante está aprobado (es decir, si su promedio de notas es mayor a un valor específico). LISTO
 
-// 14- Implementa una clase CalculadoraCientifica que herede de la clase Calculadora y agregue métodos para calcular funciones matemáticas como seno, coseno y logaritmo.
+// 14- Implementa una clase CalculadoraCientifica que herede de la clase Calculadora y agregue métodos para calcular funciones matemáticas como seno, coseno y logaritmo. LISTO
 
 // 15- Crea una clase Pelicula con propiedades como título, director, duración y una lista de actores, y métodos para agregar y eliminar actores de la lista.
 
@@ -328,10 +328,57 @@
 //     }
 // }
 
-
 // let ej1 = new Estudiante("Goncal", 24, [10, 9, 8])
 // ej1.sacarPromedio();
 // ej1.estaAprobado();
 // let ej2 = new Estudiante("Manuel", 18, [5, 5, 2])
 // ej2.sacarPromedio();
 // ej2.estaAprobado();
+
+// 14- Implementa una clase CalculadoraCientifica que herede de la clase Calculadora y agregue métodos para calcular funciones matemáticas como seno, coseno y logaritmo.
+
+// class Calculadora {
+//     constructor(valor1, valor2) {
+//         this.valor1 = valor1;
+//         this.valor2 = valor2;
+//     }
+//     sumar() {
+//         let resultado = this.valor1 + this.valor2;
+//         console.log(resultado);
+//     }
+//     restar() {
+//         let resultado = this.valor1 - this.valor2;
+//         console.log(resultado);
+//     }
+//     multiplicar() {
+//         let resultado = this.valor1 * this.valor2;
+//         console.log(resultado);
+//     }
+//     dividir() {
+//         if (this.valor2 === 0) {
+//             return console.log(`no se puede dividir en 0`);
+//         } else {
+//             let resultado = this.valor1 / this.valor2;
+//             console.log(resultado);
+//         }
+//     }
+// }
+
+// Calculadora.prototype.seno = function() {
+//     let resultado = Math.sin(this.valor1);
+//     console.log(`el seno de ${this.valor1} es ${resultado}`);
+// }
+// Calculadora.prototype.coseno = function() {
+//     let resultado = Math.cos(this.valor1);
+//     console.log(`el coseno de ${this.valor1} es ${resultado}`);
+// }
+// Calculadora.prototype.log = function() {
+//     let resultado = Math.log(this.valor1);
+//     console.log(`el logaritmo de ${this.valor1} es ${resultado}`);
+// }
+
+
+// ej1 = new Calculadora(5);
+// ej1.seno();
+// ej1.coseno();
+// ej1.log();
