@@ -52,3 +52,75 @@ Solicitar al usuario que ingrese una cadena y mostrar en consola la cantidad de 
  Tarea String 7:
 Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola la cantidad de veces que la palabra aparece en la cadena.
 */
+
+
+
+
+// Tarea String 2:
+// Solicitar al usuario que ingrese una cadena y mostrar en consola la cadena en minúsculas.
+
+const cadena2 = prompt('Ingrese una cadena: ');
+console.log(cadena2.toLowerCase());
+
+
+// Tarea String 3:
+// Solicitar al usuario que ingrese una cadena y mostrar en consola la primera letra en mayúscula y las demás en minúsculas.
+
+const cadena3 = prompt('Ingrese una cadena: ');
+console.log(cadena3.charAt(0).toUpperCase() + cadena3.slice(1));
+
+
+// Tarea String 4:
+// Solicitar al usuario que ingrese una cadena y mostrar en consola la cadena invertida.
+
+const cadena4 = prompt('Ingrese una cadena: ');
+console.log(cadena4.split("").reverse().join(""));
+
+
+// Tarea String 5:
+// Solicitar al usuario que ingrese una cadena y un número, y mostrar en consola la cadena truncada en la posición del número ingresado.
+
+const cadena5 = prompt('Ingrese una cadena de texto: ');
+let numero5 = prompt('Ingrese un número: ');
+if (numero5 > cadena5.length){
+    console.log("El número ingresado es mayor a la longitud de la cadena");
+}
+console.log(cadena5.slice(numero5));
+
+
+// Tarea String 6:
+// Solicitar al usuario que ingrese una cadena y mostrar en consola la cantidad de vocales que contiene.
+
+let cadena6 = prompt("Ingrese una cadena de texto:");
+let contadorVocales = 0;
+const vocales = "aáeéiíoóuú"
+cadena6 = cadena6.toLowerCase();
+for (let letra of cadena6) {
+    if (vocales.includes(letra)) {
+        ++contadorVocales;
+    }
+}
+console.log('La cadena posee ', contadorVocales, ' vocales'); 
+
+
+// Tarea String 7:
+// Solicitar al usuario que ingrese una cadena y una palabra, y mostrar en consola la cantidad de veces que la palabra aparece en la cadena.
+
+const cadena7 = prompt("Ingrese una cadena de texto:");
+const cadenaBuscar = prompt("Ingrese una palabra:"); 
+
+let arregloCadena = cadena7.split(" ");  
+let contadorPalabra = 0; 1
+
+for (let i = 0; i < arregloCadena.length; i++) {
+    if (arregloCadena[i] === cadenaBuscar) {
+        contadorPalabra++;
+    }
+}
+if (contadorPalabra === 0) {
+    console.log("La palabra ingresa no se encuentra dentro de la cadena");
+}
+else {
+    console.log("La palabra se encuentra ", contadorPalabra, " veces dentro de la cadena");
+}
+
