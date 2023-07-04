@@ -120,3 +120,28 @@
 
 //     }
 //   }
+
+//redirigir a una nueva url despues de un cierto tiempo
+    // let tiempo=0;
+    // setInterval(()=>{
+    //     document.write(tiempo++)
+    // },1000)
+    // setTimeout(()=>{
+    //     window.location.href="https://ole.com.ar"
+    // },5000) alt program soport
+
+        
+//practica de DOM
+    // let input = document.getElementById("key");
+        
+    //     input.addEventListener("input", (evento) => {
+    //       console.log(evento.target.value);
+    //     });
+
+
+    
+
+
+      
+  
+      
