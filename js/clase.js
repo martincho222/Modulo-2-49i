@@ -234,37 +234,49 @@ newCar2.esNuevo()
 
 //Nivel avanzado:
 
+/*
 //11- Implementa una clase ListaTareas que permita agregar, eliminar y mostrar tareas. Cada tarea debe tener un título y una descripción.
-
-class Tarea {
-    constructor(tarea, descripcion){
-            this.tarea = tarea
-            this.descripcion = descripcion
-        }
-        agregar(tarea, descripcion){
-            const nuevaTarea = new Tarea(tarea, descripcion)
-            this.tarea.push(nuevaTarea)
-            console.log(this.tarea)
-        }
-
-            eliminar(tarea, descripcion) {
-                const indice = this.tarea.indexOf(tarea, descripcion);
-                if (indice !== -1) {
-                    this.tarea.splice(indice, 1);
-                }
-                console.log(this.tarea);
-            }
-        mostrarTareas(){
-            console.log(this.tarea)
-        }
+class Tarea{
+    constructor(titulo, descripcion) {
+        this.titulo = titulo
+        this.descripcion = descripcion
     }
+}
+class ListaTareas {
+    constructor() {
+        this.tareas = []
+    }
+    agregarTarea(titulo, descripcion) {
+         const tarea1 = new Tarea (titulo, descripcion)
+        //const tarea = {
+        //    titulo,
+        //    descripcion
+         this.tareas.push(tarea1)
+        }
 
-    const listaDeTareas = new Tarea();
+    eliminarTarea(indice) {
+        this.tareas.splice(indice -1, 1)
+    }
+    mostrarTareas() {
+        this.tareas.forEach((tarea, indice) => {
+            console.log(`${indice}`, tarea)
+        })
+    }
+}
 
-listaDeTareas.agregar("Lavar platos", "Lavar platos, secar y guardar");
-listaDeTareas.agregar("Cocinar Pizza", "Hacer las prepizzas, ponerle salsa y queso");
+const lista = new ListaTareas();
 
-listaDeTareas.eliminar("Cocinar Pizza");
+
+lista.agregarTarea("comprar", "ir a comprar pan")
+lista.agregarTarea("comprar", "ir a comprar azucar")
+lista.agregarTarea("comprar", "ir a comprar verduras")
+lista.agregarTarea("comprar", "ir a comprar huevos")
+lista.agregarTarea("comprar", "ir a comprar tortillas")
+lista.agregarTarea("comprar", "ir a comprar facturas")
+lista.agregarTarea("comprar", "ir a comprar frutas")
+lista.eliminarTarea(1)
+lista.mostrarTareas()
+*/
 
 //12- Crea una clase Persona con propiedades como nombre, edad y género, y un método para presentarse (por ejemplo, "Hola, soy Juan, tengo 25 años y soy hombre").
 
