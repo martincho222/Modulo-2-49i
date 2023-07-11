@@ -364,21 +364,51 @@
 //     }
 // }
 
-// Calculadora.prototype.seno = function() {
-//     let resultado = Math.sin(this.valor1);
-//     console.log(`el seno de ${this.valor1} es ${resultado}`);
-// }
-// Calculadora.prototype.coseno = function() {
-//     let resultado = Math.cos(this.valor1);
-//     console.log(`el coseno de ${this.valor1} es ${resultado}`);
-// }
-// Calculadora.prototype.log = function() {
-//     let resultado = Math.log(this.valor1);
-//     console.log(`el logaritmo de ${this.valor1} es ${resultado}`);
+// class CalculadoraCientifica extends Calculadora {
+//     seno() {
+//         let resultado = Math.sin(this.valor1);
+//         console.log(`el seno de ${this.valor1} es ${resultado}`);
+//     }
+//     coseno() {
+//         let resultado = Math.cos(this.valor1);
+//         console.log(`el coseno de ${this.valor1} es ${resultado}`);
+//     }
+//     log() {
+//         let resultado = Math.log(this.valor1);
+//         console.log(`el logaritmo de ${this.valor1} es ${resultado}`);
+//     }
 // }
 
-
-// ej1 = new Calculadora(5);
+// ej1 = new CalculadoraCientifica(5);
 // ej1.seno();
 // ej1.coseno();
 // ej1.log();
+
+// 15- Crea una clase Pelicula con propiedades como título, director, duración y una lista de actores, y métodos para agregar y eliminar actores de la lista.
+
+// class Pelicula {
+//     constructor(titulo, director, duracion, actores) {
+//         this.titulo = titulo;
+//         this.director = director;
+//         this.duracion = duracion;
+//         this.actores = [];
+//         // this.actor;
+//     }
+//     agregar(actor) {
+//         this.actores.push(actor);
+//         console.log(`agregaste a ${actor} la lista de actores`);
+//     }
+//     mostrarActores() {
+//         console.log(`Actualmente hay ${this.actores.length} actores agregados. ${this.actores}`);
+//     }
+//     eliminar() {
+
+//     }
+
+// }
+
+// let ej1 = new Pelicula("El secreto de sus ojos", "Juan José Campanella", 120)
+
+// ej1.agregar("darin");
+// ej1.agregar("francella");
+// ej1.mostrarActores();

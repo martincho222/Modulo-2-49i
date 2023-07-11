@@ -1,0 +1,25 @@
+.fondo {
+    background: #18191e;
+}
+
+#borrar:hover {
+    background-color: rgb(193, 3, 3);
+}
+
+#enviar:hover {
+    background-color: #0d6efd;
+}
+
+#ingresoNumero::placeholder {
+    color: #6c757d;
+}
+
+#ingresoNumero {
+    color: #6c757d;
+}
+
+.navbar,
+.footer {
+    background: #00000000!important;
+    color: #6c757d;
+}
