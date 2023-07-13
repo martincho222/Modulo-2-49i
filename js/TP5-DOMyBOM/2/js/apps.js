@@ -87,7 +87,8 @@ class Persona {
 
     mostrarDatos(){
         const fecha = new Date(this.fechaNacimiento)
-        const fechaFormateada =fecha.toLocaleString()
+        const fechaFormateada =fecha.toLocaleDateString()
+        console.log("fecha antes de formatear: ",this.fechaNacimiento)
         alert(`Datos de la persona:
         Nombre: ${this.nombre}
         Edad: ${this.edad}
