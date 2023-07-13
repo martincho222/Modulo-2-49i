@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>TP 5 - Ejercicio 2</title>
+</head>
+<body class="m-0 p-0">
+<header>
+<nav>Taxonomia de generaciones</nav>
+</header>
+<main>
+<div class="container-fluid">
+
+    <div class="row mt-5 justify-content-center" id="juego">
+        <div class="col-6">
+            <form id="formulario" >
+                <div class="mb-3 d-flex flex-wrap gap-2" id="contenedorForm">
+                  <div>
+                    <label class="form-label">Ingresa tu nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                  </div>
+                  <div>
+                    <label class="form-label w-20">Ingresa tu edad</label>
+                    <input type="number" class="form-control w-20" id="edad">
+                  </div>
+                  <div>
+                    <label class="form-label">Ingresa tu DNI</label>
+                    <input type="number" class="form-control" id="DNI">
+                  </div>
+                  <div class="w-100">
+                    <label class="form-label">Selecciona tu sexo</label>
+                    <select class="form-select form-select mb-3" id="sexo">
+                    <option selected>------------</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    </select>           
+                  </div>
+                  <div>
+                    <label class="form-label">Ingresa tu peso (en Kg.)</label>
+                    <input type="text" class="form-control" id="peso">
+                  </div>
+                  <div>
+                    <label class="form-label">Ingresa tu altura (en cm.)</label>
+                  <input type="text" class="form-control" id="altura">
+                  </div>
+                  <div>
+                    <label class="form-label">Ingresa tu fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento">
+                  </div>
+                  
+                </div>
+                <div class="d-flex justify-content-between mb-5">
+                    <a class="btn btn-primary " id="cargar">Cargar persona</a>
+                    <button class="btn btn-primary d-none me-2" id="mostrar">Mostrar persona</button>
+                    <button class="btn btn-primary d-none" id="caracteristicas">Mostrar caracteristicas</button>
+                    <button class="btn btn-primary d-none ms-2" id="esMayor">Es Mayor de edad?</button>
+                </div>
+        </div>
+        <div class="col-4">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th colspan="5" class="text-center">
+                            CARACTERISTICAS
+                        </th>
+                    </tr>
+                  <tr class="text-center">
+                    <th scope="col">Nombre de la generación</th>
+                    <th scope="col">Marco temporal</th>
+                    <th scope="col">Población de las generaciones</th>
+                    <th scope="col">Circunstancia historica</th>
+                    <th scope="col">Rasgo Caracteristico</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center d-none" id="info">
+                    <th scope="row" id="gen">1</th>
+                    <td id="marcoTemporal">Mark</td>
+                    <td id="poblacion">Otto</td>
+                    <td id="circunstancia">@mdo</td>
+                    <td id="rasgo">@mdo</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+</div>
+
+</main>
+<footer>
+
+</footer>
+<script src="./js/apps.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
