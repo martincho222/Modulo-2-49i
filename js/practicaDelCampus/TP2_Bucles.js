@@ -266,25 +266,27 @@
 // 10
 
 
-let finLinea =5
+// let finLinea =5
 
-for (let i=1; i<=500; i++){
-    if(i>finLinea){
-        console.log("-----------------------")
-        finLinea +=5
-    }
-    if(i%4===0){
-        console.log(`${i} (multiplo de 4)`)
-    }else if (i%9===0){
-        console.log(`${i} (Mulyiplo de 9)`)
-    }else{
-        console.log(i)
-    }
-}
+// for (let i=1; i<=500; i++){
+//     if(i>finLinea){
+//         console.log("-----------------------")
+//         finLinea +=5
+//     }
+//     if(i%4===0){
+//         console.log(`${i} (multiplo de 4)`)
+//     }else if (i%9===0){
+//         console.log(`${i} (Mulyiplo de 9)`)
+//     }else{
+//         console.log(i)
+//     }
+// }
 
 
 // Dificultad:  🟢🟡🔴
 // 10- Realiza un script que pida número de filas y columnas y escriba una tabla. Dentro de cada una de las celdas deberá escribirse un número consecutivo en orden descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
+
+
 
 // Ejercicios con Math
 // ________________________________________
@@ -292,23 +294,81 @@ for (let i=1; i<=500; i++){
 // Dificultad:  🟢🟡
 // 11- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor. *
 
+
+    // let numUno = parseInt(prompt("ingrese un numero"));
+    // let numDos = parseInt(prompt("ingrese un numero"));
+    // let numTres = parseInt(prompt("ingrese un numero"));
+
+    // console.log(`De los numeros ingresados "${numUno}, ${numDos}, y ${numTres}" el mayor es: ${Math.max(numUno,numDos, numTres)}`)
+
 // Nota: ver funcion Math() https://www.w3schools.com/js/js_math.asp
 
 // Dificultad:  🟢🟡
 // 12- Realiza un script que genere un número aleatorio entre 1 y 99
 
+//     let numeroAleatorio = Math.round(Math.random()*(99-1)+1);
 
-// Ejercicios con String
-// ________________________________________
 
-// Dificultad:  🟢🟡
-// 13- Realiza un script que pida un texto y lo muestre en mayúsculas.
+//     console.log(numeroAleatorio);
+
+
+// // Ejercicios con String
+// // ________________________________________
+
+// // Dificultad:  🟢🟡
+// // 13- Realiza un script que pida un texto y lo muestre en mayúsculas.
+
+//     let textoMinusculas = prompt ("ingrese un texto que sera convertido en mayusculas")
+
+//     console.log(textoMinusculas.toUpperCase());
+
 // Dificultad:  🟢🟡
 // 14- Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
-// Dificultad:  🟢🟡
-// 15- Realiza un script que cuente el número de vocales que tiene un texto.
-// Dificultad:  🟢🟡
-// 16- Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
+
+//     let hola = "hola que tal"
+//     let nuevoSaludo = ""
+
+//     for (let i=0;i<hola.length;i++){
+//         nuevoSaludo += hola[i]
+//         if (!(hola.length-1 === i)){
+//             nuevoSaludo += "-"
+//         }
+//     }
+    
+
+//     console.log(nuevoSaludo)
+    
+
+// // Dificultad:  🟢🟡
+// // 15- Realiza un script que cuente el número de vocales que tiene un texto.
+// // Dificultad:  🟢🟡
+
+// let cuentaVocales = "hola a todos";
+// let contadorVocales = 0;
+
+// for (let i = 0; i<cuentaVocales.length;i++){
+//     if (cuentaVocales[i].toLocaleLowerCase()==="a" ||
+//         cuentaVocales[i].toLocaleLowerCase()==="e" ||
+//         cuentaVocales[i].toLocaleLowerCase()==="i" ||
+//         cuentaVocales[i].toLocaleLowerCase()==="o" ||
+//         cuentaVocales[i].toLocaleLowerCase()==="u"
+//         ){
+//             contadorVocales ++
+//         }
+// }
+
+// console.log(`"${cuentaVocales}" tiene ${contadorVocales} vocales.`);
+
+
+// // 16- Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
+
+// let cadenaComun = "cadena de texto".split("")
+// let nuevacadena = cadenaComun.reverse()
+// cadenaComun = nuevacadena.join("")
+// console.log(cadenaComun)
+
+
+
 // Dificultad:  🟢
 // 17- Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.
 
@@ -318,3 +378,22 @@ for (let i=1; i<=500; i++){
 // Input: Hola mundo
 
 // Output: la vocal ‘o’ está en la posición 1 
+
+let buscaVocal = "hla a todos";
+
+
+for (let i = 0; i<buscaVocal.length;i++){
+    if (buscaVocal[i].toLocaleLowerCase()==="a" ||
+        buscaVocal[i].toLocaleLowerCase()==="e" ||
+        buscaVocal[i].toLocaleLowerCase()==="i" ||
+        buscaVocal[i].toLocaleLowerCase()==="o" ||
+        buscaVocal[i].toLocaleLowerCase()==="u"
+        ){
+            console.log(`"la vocal ${buscaVocal[i]}" se encuentra en la posicion ${i+1}.`);
+            break;
+        }else{
+            console.log("no hay vocales");
+        }
+}
+
+
