@@ -174,3 +174,118 @@
 // }
 
 // persona.saludar();
+
+//ENCAPSULACION
+
+// class CuentaBancaria {
+//     constructor(saldoInicial){
+//         let saldo = saldoInicial;
+
+//         this.depositar = function(cantidad) {
+//             saldo += cantidad;
+//             console.log(`Se depositaron $${cantidad}. saldo actual ${saldo}`);
+//         }
+//         this.retirar =function(cantidad) {
+//             if(saldo >= cantidad){
+//                 saldo -= cantidad;
+//                 console.log(`Se retiraron $${cantidad}. saldo actual ${saldo}`);
+//             } else {
+//                 console.log(`Saldo insuficiente`);
+//             }
+//         }
+//         this.verSaldo = () => {
+//             console.log(`Tu saldo es ${saldo}`);
+//         }
+//     }
+
+// }
+
+// const cuenta = new CuentaBancaria(1000);
+// console.log(cuenta);
+// cuenta.depositar(500)
+// cuenta.retirar(300)
+// cuenta.saldo
+// cuenta.verSaldo()
+// console.log(cuenta.saldo);
+
+//POLIMORFISMO
+
+// class Animal {
+//     constructor(name){
+//         this.name = name;
+//     }
+
+//     sonido() {
+//         console.log(`Haciendo ruidos .....`);
+//     }
+
+//     sonido2() {
+//         console.log(`sonido 2`);
+//     }
+
+// }
+
+// class Perro extends Animal {
+//     sonido() {
+//         console.log(`Gua Gua`);
+//     }
+   
+// }
+
+// class Gato extends Animal {
+//     sonido() {
+//         console.log(`Miau Miau`);
+//     }
+// }
+
+// const perro = new Perro ("Firulais");
+// const gato = new Gato("Cosme Felinito");
+
+// perro.sonido();
+// perro.sonido2()
+
+// gato.sonido()
+// gato.sonido2()
+
+// class Forma {
+//     area() {
+//         console.log(`Area de la forma geometrica`);
+//     }
+// }
+
+// class Rectangulo extends Forma {
+//     constructor(ancho, alto) {
+//         super()
+//         this.ancho = ancho;
+//         this.alto = alto;
+//     }
+//     calculo() {
+//         return this.ancho * this.alto
+//     }
+//     area() {
+//         console.log(`Area del rectangulo mts2`, this.calculo() );
+//     }
+// }
+
+
+// class Circulo extends Forma {
+//     constructor(radio) {
+//         super()
+//         this.radio =radio;
+//     }
+
+//     area() {
+//         console.log(`Area del Circulo`, Math.PI * Math.pow(this.radio, 2));
+//     }
+// }
+
+
+// const rectangulo = new Rectangulo(50, 20)
+// const circulo = new Circulo(20)
+// // console.log(rectangulo);
+// // rectangulo.area();
+// // circulo.area()
+// const formas = [rectangulo, circulo]
+// formas.forEach(function(forma) {
+//     return forma.area();
+// })
