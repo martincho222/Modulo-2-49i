@@ -91,4 +91,20 @@ const updateTask = (id) => {
     console.log(tareaBuscada);
     createTasks()
 }
+
+const deleteTask = (id) => {
+    const confirmar = confirm("desea eliminar esta tarea")
+  if(confirmar){
+    console.log("clicked");
+    const tareaFiltrada = data.filter((tarea)=>{
+        return tarea.id !== id;
+    });
+    data = tareaFiltrada;
+    localStorage.setItem("tasks", JSON.stringify(data));
+    createTasks()
+  } else {
+    alert('Cancelado')
+  }
+}
+
 createTasks()
