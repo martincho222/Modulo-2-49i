@@ -1,0 +1,28 @@
+*root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Oswald;
+    background-image: url("https://i.blogs.es/94ae97/windows-365-1920x1080-microsoft-windows-11-4k-24070/1366_2000.jpg");
+}
+
+.container {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.col-5 {
+    background-color: #011021;
+    opacity: 0.6;
+}
+
+.hora {
+    font-size: 4.4rem;
+}
+
+#milisegundos {
+    font-size: 2.5rem;
+    line-height: 1;
+}
