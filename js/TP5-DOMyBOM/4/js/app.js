@@ -34,7 +34,8 @@ const actualizarHora = ()=>{
     let amPmCheck;
     let fechaUpdate = new Date();
     hora = fechaUpdate.getHours();
-    segundos = fechaUpdate.getSeconds();
+    let segundosAux = fechaUpdate.getSeconds();
+    segundos = segundosAux.toString().padStart(2,"0")
     minutos = fechaUpdate.getMinutes();
     if (hora>=12) {
         amPmCheck="PM"

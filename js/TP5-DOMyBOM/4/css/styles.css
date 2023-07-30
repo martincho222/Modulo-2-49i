@@ -1,4 +1,10 @@
+*root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
+    font-family: Oswald;
     background-image: url("https://i.blogs.es/94ae97/windows-365-1920x1080-microsoft-windows-11-4k-24070/1366_2000.jpg");
 }
 
@@ -13,13 +19,17 @@ body {
 }
 
 .hora {
-    font-size: 2.4rem;
+    font-size: 5.4rem;
 }
 
 #segundos {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 1;
 }
 
 #ampm {
-    font-size: 1.5rem;
+    vertical-align: baseline;
+    font-size: 2.7rem;
+    text-align: end;
+    line-height: 1;
 }
