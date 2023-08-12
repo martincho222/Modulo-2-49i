@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Cronómetro</title>
+    <title>Temporizador</title>
 </head>
 <body class="bg-body-secondary">
-    <h1 class="text-center text-primary py-4 text-bold">Cronómetro</h1>
+    <h1 class="text-center text-primary py-4 text-bold">Temporizador</h1>
 
     <div class="container text-center mt-5">
-        <div id="timer" class="mt-4 fs-1">00:00:00</div>
+        <div class="form-group mt-4">
+          <label for="timeInput">Tiempo (segundos):</label>
+          <input type="number" id="timeInput" class="form-control w-50 mx-auto text-center fs-3" value="60" min="1" required>
+        </div>
+        <div id="timer" class="mt-3 fs-1 text-center">00:00</div>
         <div class="mt-3">
           <button id="startButton" class="btn btn-success mr-2">Iniciar</button>
           <button id="pauseButton" class="btn btn-primary mr-2" disabled>Pausar</button>
