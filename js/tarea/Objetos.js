@@ -234,8 +234,8 @@
   
 //     agregar(titulo, descripcion) {
 //       const tarea = {
-//         titulo: titulo,
-//         descripcion: descripcion
+//         titulo,
+//         descripcion
 //       };
 //       this.tareas.push(tarea);
 //     }
@@ -383,7 +383,7 @@ class ActoresPeliculas {
   
     agregar(actor) {
       const actores = {
-        actor: actor
+        actor
       };
       this.actores.push(actores);
     }
