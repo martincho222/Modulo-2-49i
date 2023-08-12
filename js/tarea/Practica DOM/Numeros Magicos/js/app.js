@@ -19,4 +19,4 @@ document.getElementById('startButton').addEventListener('click', function() {
         alert('El número que ingresaste es mayor.');
       }
     });
-  });
+});
