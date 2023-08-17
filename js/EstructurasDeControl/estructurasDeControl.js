@@ -97,3 +97,15 @@
 // for (let i = 0; i <= 15; i++) {
 //     console.log(i);
 // }
+
+
+//operador ternario 
+// sintaxis: condicion ? expresionVerdadera : expresionFalsa;
+
+// const edad = 10;
+// const mensaje = edad >= 18 ? "eres mayor de edad" : "no eres mayor";
+
+// console.log(mensaje);
+
+// const esPar = (numero) => numero % 2 === 0 ? "es Par" : "es Impar";
+// console.log(esPar(10));

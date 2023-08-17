@@ -89,3 +89,39 @@
 
 // console.log(ejecutarOperacion(5, 3, sumar));
 // console.log(ejecutarOperacion(5, 3, restar));
+
+
+//arrow function // funciones flechas
+
+// const nombreFuncion = (parametro1, paremtro2) => {
+//     //cuerpo de la funcion
+// }
+
+// const saludar = () => console.log(`Hola a todos`);
+
+// function objectThis(a, b) {
+//     console.log(arguments);
+// }
+// objectThis(1, 2)
+
+// const thisObject = (a, b) => console.log(arguments);
+// thisObject(1, 2)
+
+// const persona = {
+//     nombre: 'Juan',
+//     apellido: 'Perez',
+//     getFullname: function(){
+//         console.log(`${this.nombre} ${this.apellido}`)
+//     },
+//     getFullNameArrow: () => {
+//         console.log(`${this.nombre} ${this.apellido}`);
+//     }
+
+// }
+
+// persona.getFullname()
+// persona.getFullNameArrow()
+
+
+  
+  
