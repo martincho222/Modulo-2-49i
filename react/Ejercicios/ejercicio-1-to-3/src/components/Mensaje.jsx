@@ -1,21 +1,21 @@
 import { useState } from "react"
 import { Button } from "react-bootstrap"
 
-const Mensaje = () => {
-    const [mensaje, setMensaje] = useState('');
+const Mensaje = ({ mensaje }) => {
+    const [state, setState] = useState('');
 
   return (
     <>
     <div className="d-flex justify-content-center ">
-        <h1>Hello world {mensaje}</h1>
+        <h1>{mensaje} {state}</h1>
     </div>
     <div>
         <Button 
             variant="primary" 
             className="d-flex mx-auto"
-            onClick={() => setMensaje('from changed state')}
+            onClick={() => setState('from changed state')}
         >
-            Primary
+            Click Me
         </Button>
     </div>
     </>

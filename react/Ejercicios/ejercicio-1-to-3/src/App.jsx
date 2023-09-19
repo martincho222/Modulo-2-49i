@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <Mensaje />
+      <Mensaje mensaje= 'Hello Word' />
     </>
   )
 }
