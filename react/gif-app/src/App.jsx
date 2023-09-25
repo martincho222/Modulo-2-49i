@@ -12,7 +12,7 @@ function App() {
       <AddCategory setCategories={setCategories} />
       <ol>
         {categories.map((category) => (
-          <GifGrid category={category} key={category} />
+          <GifGrid category={category} key={category.id} />
         ))}
       </ol>
     </div>

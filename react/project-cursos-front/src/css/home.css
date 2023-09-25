@@ -1,0 +1,20 @@
+.home-container {
+  margin-top: 100px;
+}
+
+.home-container h1 {
+  line-height: 1.5;
+}
+
+.home-container img {
+  width: 100%;
+}
+
+.text-grey {
+  color: grey;
+  margin-top: 20px;
+}
+
+.parrafito {
+  text-align: center;
+}

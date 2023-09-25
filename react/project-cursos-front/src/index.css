@@ -1,0 +1,10 @@
+.error404{
+    width: 100%;
+}
+
+.link_curso {
+    text-decoration: none;
+}
+.link_curso:hover{
+    text-decoration: underline;
+}

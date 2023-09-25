@@ -1,0 +1,9 @@
+.avatar {
+  border-radius: 100%;
+  width: 30px;
+  border: 2px solid rgb(34, 155, 211);
+}
+.card {
+  border-radius: 10px;
+  height: 315px;
+}

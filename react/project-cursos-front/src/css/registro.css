@@ -1,0 +1,13 @@
+.card-registro{
+    width: 50%;
+    margin-top: 80px;
+    min-height: 600px;
+}
+
+.card-registro img{
+    object-fit: cover;
+}
+
+.card-body{
+    padding: 30px;
+}
